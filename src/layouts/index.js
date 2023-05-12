@@ -1,0 +1,5 @@
+export { default as DefaultLayout } from './DefaultLayout/DefaultLayout'
+export { default as DefaultMobileLayout } from './DefaultMobileLayout/DefaultMobileLayout'
+export { default as HeaderSearchMobileLayout } from './HeaderSearchMobileLayout/HeaderSearchMobileLayout'
+export { default as HeaderOnlyLayout } from './HeaderOnlyLayout/HeaderOnlyLayout'
+export { default as HeaderOnlyMobileLayout } from './HeaderOnlyMobileLayout/HeaderOnlyMobileLayout'

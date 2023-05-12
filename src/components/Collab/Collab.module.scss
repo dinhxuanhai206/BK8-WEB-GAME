@@ -1,0 +1,17 @@
+.text-content {
+    padding: 5px 15px;
+    .item-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.5px solid rgb(221, 221, 253);
+      .title-menu {
+        font-size: 16px;
+        color: black;
+      }
+    }
+    .text{
+       font-size: 14px;
+       margin: 10px 0;
+    }
+  }

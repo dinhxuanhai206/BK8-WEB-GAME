@@ -1,0 +1,37 @@
+.text-content {
+    .item-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      background: rgb(241, 240, 240);
+      border-bottom: 0.5px solid rgb(221, 221, 253);
+      // .title-menu {
+      //   font-size: 16px;
+      //   color: black;
+      // }
+      .left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .right{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: sans-serif;
+        p{
+          font-weight: bold;
+        }
+        .btn{
+          background-image: linear-gradient(rgb(47, 110, 175), rgb(19, 48, 78));
+          color: #a4b3c3;
+          padding: 9px 18px;
+          border-radius: 5px;
+        }
+      }
+    }
+    .text{
+       font-size: 14px;
+    }
+  }

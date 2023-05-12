@@ -1,0 +1,12 @@
+@import "../../../responsive.scss";
+.wrapper{
+    padding-right: 100px;
+    display: flex;
+    width: 100%;
+    .tableRank{
+        width: 80%;
+    }
+    @include tablet {
+        padding-right: 0;
+    }
+}

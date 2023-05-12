@@ -1,0 +1,166 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  .fiel {
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    border-top: 0.5px solid #dad6d6;
+    border-bottom: 0.5px solid #dad6d6;
+    padding: 10px 30px;
+    gap: 10px;
+
+    .coin {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .network {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .address {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .account-no {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include tablet {
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+      font-size: 1.3rem;
+
+      .coin {
+        width: 25%;
+        padding: 0;
+      }
+      .network {
+        width: 25%;
+        padding: 0;
+      }
+      .address {
+        width: 25%;
+        padding: 0;
+      }
+      .account-no {
+        width: 25%;
+        padding: 0;
+      }
+    }
+  }
+  .form {
+    margin-top: 30px;
+    margin-left: 40px;
+
+    .Cryptocurrency-blog {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      .Cryptocurrency-title {
+        width: 143px;
+        margin-right: 25px;
+        color: #6a8cb0;
+      }
+      .select {
+        color: #858585;
+        padding: 15px 10px;
+        width: 300px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @include tablet{
+        width: 100%;
+        .Cryptocurrency-title {
+          width: 30%;
+          margin-right: 25px;
+          color: #6a8cb0;
+        }
+        .select {
+          width: 62%;
+          margin-right: 40px;
+        }
+      }
+    }
+    .network-blog {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      .network-title {
+        width: 143px;
+        margin-right: 25px;
+        color: #6a8cb0;
+      }
+
+      .select {
+        color: #858585;
+        padding: 15px 10px;
+        width: 300px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @include tablet{
+        width: 100%;
+        .network-title {
+          width: 30%;
+          margin-right: 25px;
+          color: #6a8cb0;
+        }
+        .select {
+          width: 62%;
+          margin-right: 40px;
+        }
+      }
+    }
+    .address {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      .address-title {
+        width: 143px;
+        margin-right: 25px;
+        color: #6a8cb0;
+      }
+
+      .input {
+        padding: 15px 10px;
+        width: 300px;
+        border-radius: 5px;
+        border: 0.5px solid rgb(120, 119, 119);
+      }
+      @include tablet{
+        width: 100%;
+        .address-title {
+          width: 30%;
+          margin-right: 25px;
+          color: #6a8cb0;
+        }
+        .input  {
+          width: 62%;
+          margin-right: 40px;
+        }
+      }
+    }
+    .save {
+      display: flex;
+      align-items: center;
+      padding-bottom: 100px;
+      .save-title {
+        width: 143px;
+        margin-right: 25px;
+      }
+
+      .btn-save {
+        padding: 12px 80px;
+        text-align: center;
+        color: white;
+        background: #0062c9;
+        background: linear-gradient(to bottom, #e6d4f5 0%, #003679 180%);
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}

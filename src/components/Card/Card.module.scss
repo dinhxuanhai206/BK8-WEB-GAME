@@ -1,0 +1,192 @@
+@import '../../responsive.scss';
+
+.card-item{
+    position: relative;
+    height: 230px;
+    width: 94%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover{
+        .card-over-box{
+            transform: scale(1);
+            overflow: hidden;
+            width: 100%;
+            width: 125%;
+            height: 115%;
+            left: -12%;
+            top: -7%;
+        }
+    }
+
+    .card-img{
+        width: 100%;
+        height: 174px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        @include tablet {
+            height: 120px; 
+        }
+    }
+
+    .card-text{
+        background: #f2f2f2;
+        padding: 2px 15px;
+        display: flex;
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: 15px;
+        }
+
+        i{
+            position: absolute;
+            right: 15px;
+        }
+        @include tablet {
+            height: 40px;
+        }
+    }
+
+    .card-over-box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: #fff;
+        box-shadow: 0 0 7px rgba(0,0,0,0.3);
+        transform: scale(0);
+        transition: all .3s ease-in-out;
+        padding: 0 19px;
+        cursor: default;
+
+        .card-img{
+            width: 100%;
+            height: 65%;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+
+            &:hover{
+                .over-action{
+                    top: 0;
+                }
+            }
+
+            .over-action{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                transition: all .4s ease-out;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: default;
+
+                a{
+                    width: 120px;
+                    height: 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 8px 0;
+                    border-radius: 3px;
+                    font-weight: 700;
+                }
+
+                .btn-play{
+                    width: 120px;
+                    height: 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 8px 0;
+                    border-radius: 3px;
+                    font-weight: 700;
+                    background: #003b79;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+                .btn-demo{
+                    background: #fcb813;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .card-text{
+            background: #fff;
+        }
+
+    }
+
+    @include tablet{
+        width: 95%;
+        height: 90%;
+        .card-img{
+            img{
+                height: 100%;
+            }
+        }
+
+        .card-text{
+            background: #f2f2f2;
+            padding-left: 15px;
+            font-size: 1.2rem;
+            text-align: center;
+            p{
+                font-size: 1.4rem;
+                color: #6d6d6e;
+            }
+        }
+    }
+
+    @include mobile{
+        height: auto;
+        width: 94%;
+        margin-bottom: 0.8em;
+
+        .card-img{
+            height: unset;
+            img{
+                height: 78px;
+            }
+        }
+
+        .card-text{
+            background: #ffffff;
+            height: unset;
+            display: unset;
+            padding: 0;
+            text-align: center;
+            p{
+                font-size: 1.4rem;
+                color: #6d6d6e;
+            }
+        }
+    }
+}
+
+.card-casino{
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        transform: translatey(-10px);
+        cursor: default;
+        img{
+            cursor: pointer;
+        }
+    }
+}

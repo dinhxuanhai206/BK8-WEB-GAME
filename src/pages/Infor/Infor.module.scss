@@ -1,0 +1,43 @@
+@import "../../responsive.scss";
+.wrapper{
+    display: none;
+    margin-bottom: 70px;
+    @include mobile{
+        margin-top: 40px;
+        display: block;
+        .title{
+            background-color: #0166d2;
+            text-align: center;
+            padding: 10px 15px;
+            font-family: Arial;
+            color: white;
+            margin: 0 auto;
+        }
+        .tabLogo{
+            display: flex;
+            justify-content: space-between;
+            padding:15px 20px;
+            .items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .logo-img{
+                    background: none;
+                }
+                p{
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    color: #8d8d8d;
+                }
+            }
+            .active{
+                p{
+                    color: #0166d2;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  .title-block {
+    display: flex;
+    gap: 30px;
+    padding: 20px 40px 0 40px;
+    .with-title{
+      cursor: pointer;
+      font-family: "mainFont";
+    }
+    .active{
+      font-weight: bold;
+
+    }
+  }
+  
+}

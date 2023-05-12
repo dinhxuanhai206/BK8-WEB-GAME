@@ -1,0 +1,91 @@
+.popup-card-mobile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3000;
+
+	.game-popup {
+		position: relative;
+		padding: 30px 0;
+		background: #fff;
+		border-radius: 5px;
+		width: 90%;
+		.close-popup {
+			color: red;
+			background: #fff;
+			border: none;
+			font-size: 20px;
+			outline: none;
+			position: absolute;
+			right: 11px;
+			font-weight: 800;
+			top: 4px;
+		}
+
+		.game-text {
+			text-align: center;
+			color: #6d6d6e;
+			font-size: 17px;
+			font-weight: 600;
+			padding: 5px 0;
+			font-family: 'AvenirLTStd';
+		}
+
+		.game-img {
+			width: 100%;
+			img {
+				width: 84%;
+				margin: 0 auto;
+				display: block;
+			}
+		}
+
+		.game-action {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 28px;
+
+			> a,
+			> button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #fff;
+				font-size: 18px;
+				padding: 4px 0;
+				font-family: 'AvenirLTStd';
+				text-transform: uppercase;
+				font-weight: 500;
+				border-radius: 5px;
+				cursor: pointer;
+				width: 134px;
+			}
+
+			.btn-play {
+				border-radius: 5px;
+                height: 40px;
+				color: #fff;
+				background-color: #004a99;
+				background-image: linear-gradient(#0061c7, #003d7d);
+				cursor: pointer;
+			}
+
+			.btn-demo {
+				background: linear-gradient(#f3b303, #f89c19);
+				color: black;
+				cursor: pointer;
+			}
+		}
+
+		.one-btn {
+			justify-content: center;
+		}
+	}
+}

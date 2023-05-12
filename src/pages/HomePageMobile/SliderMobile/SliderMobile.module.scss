@@ -1,0 +1,177 @@
+@import "../../../responsive.scss";
+
+.wrapper {
+  display: none;
+  @include mobile {
+    display: block;
+    margin-top: 40px;
+    .img-info {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(6, 7, 18, 0.406);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      .block-image {
+        padding: 50px 15px;
+        position: relative;
+        background: #f4fcfb;
+        margin-top: 150px;
+        width: 90%;
+        height: 70%;
+        .toggle {
+            height: 40%;
+          }
+        .img-infoClose {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          font-size: 20px;
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+    .balance-wrapper {
+      background: linear-gradient(to bottom, #f7f7f7 0%, #e9e9e9 99%);
+      padding: 15px;
+      margin: 0 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border: 1px solid rgb(211, 211, 252);
+      .balance-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(196, 196, 199);
+        .coin {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          .left {
+            .title {
+              color: #fcb813;
+              font-size: 12px;
+            }
+          }
+          .block {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .vnd {
+              font-size: 12px;
+              span {
+                font-size: 20px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .right {
+          width: 15%;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .img {
+            .img-store {
+              width: 55%;
+            }
+          }
+          .title {
+            font-size: 8px;
+            margin-top: -5px;
+          }
+        }
+      }
+      .balance-bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+        .block-item {
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          text-align: center;
+          .item-img {
+            width: 30px;
+            height: 30px;
+            .img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .name {
+            font-size: 1rem;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+    .swiper {
+      width: 100%;
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        .image {
+          width: 100%;
+          height: 100%;
+          @include mobile {
+          }
+        }
+      }
+    }
+    .custom-pagination {
+      width: 6px;
+      height: 6px;
+      background-color: orange;
+      border-radius: 50%;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      margin-top: -8px;
+      .btn-register {
+        background-image: linear-gradient(to top, #940014, #cc001b);
+        height: 45px;
+        flex: 50%;
+        text-align: center;
+        line-height: 45px;
+        font-size: 16px;
+        color: white;
+      }
+      .btn-login {
+        background-image: linear-gradient(to top, #003b79, #0062c9);
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 16px;
+        flex: 50%;
+      }
+    }
+    .notification {
+      display: flex;
+      align-items: center;
+      padding: 10px 10px;
+      padding-right: 15px;
+      border-bottom: 0.3px solid rgb(158, 155, 155);
+      .img-icon {
+        width: 150%;
+      }
+
+      .div {
+        margin-left: 35px;
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+    }
+  }
+}

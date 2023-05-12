@@ -1,0 +1,43 @@
+.wrapper{
+    background: rgba(255, 255, 255, 0.7);
+}
+.item-block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 10px;
+}
+.title-banking{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.title-myaccount{
+    margin: 20px;
+}
+li{
+    list-style-type: none;
+    transition: all .5s;
+    height: 100%;
+}
+.item-image{
+    margin-top: 8px;
+
+}
+.tab-items{
+    background-image: -webkit-linear-gradient(top, #f4f3f3, #e6e6e6);
+    margin: 10px 20px;
+    border-radius: 5px;
+}
+.active{
+    background: #0066d1;
+    cursor: pointer;
+   
+    .item-title{
+        color: white;
+    }
+}
+  
+.item-title{
+    color: #858585;
+}

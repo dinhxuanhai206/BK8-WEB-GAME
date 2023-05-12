@@ -1,0 +1,29 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  display: none;
+  background: rgb(244, 240, 240);
+  border-radius: 10px;
+  @include mobile {
+    display: flex;
+    padding: 0 10px;
+    margin: 20px 10px;
+    flex-wrap: wrap;
+    .block-item {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      width: 25%;
+      border-bottom: 0.5px solid rgb(226, 222, 222);
+      text-align: center;
+      .img {
+        width: 100%;
+        .img-item {
+          width: 100%;
+        }
+      }
+      .text {
+        font-size: 10px;
+        color: #858585;
+      }
+    }
+  }
+}

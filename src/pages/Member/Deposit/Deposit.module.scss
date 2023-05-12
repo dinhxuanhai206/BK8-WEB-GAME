@@ -1,0 +1,187 @@
+@import "../../../responsive.scss";
+.wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  @include tablet {
+    width: 100%;
+  }
+
+  .deposit-title {
+    padding: 20px 40px;
+    border-bottom: 0.5px solid #c5c1c1;
+  }
+  .deposit-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  .inner {
+    width: 65%;
+    .deposit-block {
+      display: flex;
+      margin-top: 30px;
+      align-items: center;
+      width: 100%;
+      .deposit-option {
+        width: 26.5%;
+        margin-right: 25px;
+        margin-left: 40px;
+        @include tablet{
+          width: 48%;
+          margin-left: 20px;
+          margin-right: 0px;
+          font-size: 1.2rem;
+        }
+      }
+      .title-block {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        .with-title{
+          width: 25%;
+          padding:5px;
+          background: #edeef0;
+          border-radius: 8px;
+          cursor: pointer;
+          &:active{
+            background: #0257b1;
+            color: white;
+          }
+        }
+        .active {
+          position: relative;
+          border: 0.5px solid rgb(2, 2, 247);
+          border-radius: 5px;
+          overflow: hidden;
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-color: transparent blue blue transparent;
+            border-style: solid;
+            border-width: 8px 8px 8px 8px;
+            height: 0px;
+            width: 0px;
+          }
+        }
+        .name {
+          font-size: 1.1rem;
+          font-family: sans-serif;
+        }
+      }
+      @include tablet {
+        .title-block {
+          gap: 10px;
+          .with-title{
+            width: 25%;
+            padding:5px 2px;
+            height: 48px;
+            background: #edeef0;
+            border-radius: 4px;
+            cursor: pointer;
+            line-height: 10px;
+          }
+          .active{
+            &::before {
+              content: "";
+              border-width: 5px 5px 5px 5px;
+              font-weight: bold;
+            }
+          }
+          .name {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .block-trans {
+      display: flex;
+      padding: 10px 40px;
+      margin: 20px 0; 
+      gap: 50px;
+      justify-content: space-between;
+      background-color: rgba(129, 157, 187, 0.15);
+      font-family: --mainFont;
+      @include tablet {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 30px;
+        margin: 20px 0;
+        gap: 25px;
+        font-size: 1.4rem;
+      }
+    }
+    .block-date {
+      display: flex;
+      margin: 20px 0;
+      padding: 0;
+      gap: 40px;
+      justify-content: center;
+      font-family: --mainFont;
+      .reject {
+        color: red;
+      }
+      @include tablet {
+        margin: 20px 0;
+        padding: 0;
+        gap: 10px;
+        justify-content: space-between;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .deposit-right {
+    width: 30%;
+    background-color: #eeeeee;
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 445px;
+    padding: 20px;
+    .right-title {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .desc {
+      display: flex;
+      margin-bottom: 5px;
+      line-height: 18px;
+
+      .num {
+        font-family: --mainFont;
+      }
+      .text-num {
+        margin-left: 5px;
+        font-size: 12px;
+        font-family: --mainFont;
+      }
+    }
+    @include tablet {
+      padding: 10px;
+      margin-right: 10px;
+      .right-title {
+        gap: 10px;
+        align-items: center;
+        .span{
+          font-size: 1rem;
+        }
+      }
+      .desc {
+        line-height: 14px;
+
+        .num {
+          font-size: 1rem;
+        }
+        .text-num {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

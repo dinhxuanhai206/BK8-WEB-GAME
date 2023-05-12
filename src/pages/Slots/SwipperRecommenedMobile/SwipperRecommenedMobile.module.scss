@@ -1,0 +1,46 @@
+.title{
+    font-size: 13px;
+    color: #000;
+    font-family: 'AvenirLTStd';
+    margin: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.body{
+    background: linear-gradient(#6c8eb1 10%, #fff 90%);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aec0d2;
+    .item-swipper{
+        .card-item{
+            margin-bottom: 0;
+        }
+    
+        .category{
+            font-size: 1rem;
+            color: #6a8cb0;
+            text-align: center;
+        }
+    }
+
+    .custom-pagination{
+        color: red;
+    }
+
+    .card-swipper{
+        width: 94%;
+        height: auto;
+        margin-right: 20px;
+        
+        img{
+            width: 100%;
+        }
+
+        .name{
+            text-align: center;
+            font-size: 1rem;
+            color: #6d6d6e;
+        }
+    }
+}

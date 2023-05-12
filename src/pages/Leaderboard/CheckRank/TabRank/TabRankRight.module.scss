@@ -1,0 +1,33 @@
+.tab-page-logo {
+    height: 110px;
+    .tab-items {
+      list-style-type: none;
+      transition: all 0.5s;
+      text-align: center;
+      height: 100%;
+    }
+    .logo-img {
+      padding: 12px 18px 0px 18px;
+      text-align: center;
+      background-color: #ada9a9;
+      &:hover {
+          cursor: pointer;
+        }
+    }
+  
+    .active {
+      background: #2d2d2d;;
+      p {
+    
+          color: white;
+        }
+    }
+    p {
+      margin-top: 8px;
+     margin-bottom: 10px;
+   
+     width: 60px;
+      color: rgb(221, 216, 216);
+    }
+  }
+  

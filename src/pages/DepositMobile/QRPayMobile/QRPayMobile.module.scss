@@ -1,0 +1,70 @@
+.wrapper {
+    margin: 0 10px;
+    margin-top: 30px;
+    .title {
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #6a8bc0;
+      font-family: sans-serif;
+      font-weight: 500;
+      span {
+        color: red;
+      }
+    }
+    .select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .inputs {
+      width: 100%;
+      .input {
+        width: 100%;
+        background: rgb(224, 222, 222);
+        border-radius: 5px;
+        border: 1px solid rgb(193, 192, 192);
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+    }
+    .min {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .btn-block {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 20px 5px;
+      margin-bottom: 0;
+  
+      .btn-number {
+        padding: 8px 0px;
+        width: 66px;
+        text-align: center;
+        background: none;
+        color: #6d6d6d;
+        border-radius: 5px;
+        border: 1px solid rgb(165, 165, 255);
+      }
+    }
+    .qr-text{
+        color:red;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .button-deposit {
+      width: 100%;
+      .btn-dep {
+        width: 100%;
+        padding: 12px 0;
+        border-radius: 5px;
+        background: linear-gradient(#0062c9, #003b79);
+        background-image: linear-gradient(rgb(0, 98, 201), rgb(0, 59, 121));
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  

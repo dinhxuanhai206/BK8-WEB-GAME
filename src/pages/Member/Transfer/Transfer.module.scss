@@ -1,0 +1,261 @@
+@import "../../../responsive.scss";
+$padding-text: 5px 16px 5px 16px;
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  .title {
+    display: grid;
+    grid-template-columns: 45% 30% 25%;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    padding-top: 15px;
+    font-size: 20px;
+  }
+}
+.main {
+  padding-left: 35px;
+}
+.title-trans {
+  .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #6a8cb0;
+    gap: 10px;
+    font-family: Helvetica;
+    .from {
+      display: flex;
+      align-items: center;
+      .transForm {
+        font-size: 1.6rem;
+        min-width: 120px;
+      }
+    }
+    .amount {
+      margin-right: 20px;
+      margin-left: 50px;
+    }
+    .transfer {
+      height: 20px;
+      width: 20px;
+      margin: 5px;
+      border-radius: 3px;
+    }
+    .amount-block {
+      display: flex;
+      align-items: center;
+    }
+    @include tablet {
+      display: block;
+      .amount {
+        margin-left: 0;
+        margin-right: 71px;
+      }
+      .amount-block {
+        margin-top: 5px;
+        margin-bottom: -5px;
+      }
+    }
+  }
+  .mainWallet {
+    height: 45px;
+    width: 190px;
+    border-radius: 3px;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.6;
+    @include tablet {
+      height: 35px;
+      width: 150px;
+    }
+  }
+  .input {
+    height: 45px;
+    width: 190px;
+    border: 1px solid rgb(175, 172, 172);
+    border-radius: 3px;
+    padding: 0 10px;
+    @include tablet {
+      height: 35px;
+      width: 150px;
+    }
+  }
+  .textAmount {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 100%;
+    width: 190px;
+  }
+}
+.specialCode {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 13px;
+  margin-top: 17px;
+  color: #6a8cb0;
+  font-family: Helvetica;
+
+  .titleSpecial {
+    text-align: left;
+    padding: 0px;
+    font-size: 1.6rem;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .textCode {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 100%;
+    width: 190px;
+    height: 40px;
+    padding: 0 10px;
+    opacity: 0.6;
+    @include tablet {
+      height: 35px;
+      width: 150px;
+    }
+  }
+}
+.promoCode {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 13px;
+  margin-top: 17px;
+  color: #6a8cb0;
+  font-family: Helvetica;
+  .titlePromo {
+    text-align: left;
+    padding: 0px;
+    font-size: 1.6rem;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+  }
+  .textPromo {
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 45px;
+    width: 190px;
+    opacity: 0.6;
+    padding: 0 10px;
+    @include tablet {
+      height: 35px;
+      width: 150px;
+    }
+  }
+}
+.item-btn {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-bottom: 13px;
+  margin-top: 17px;
+
+  .submit-btn {
+    padding: 10px;
+    // margin: 10px;
+    margin-left: 123px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(to bottom, #0062c9 0%, #003679 102%);
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+
+.total {
+  .tableSport {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px 20px 0 20px;
+    .titleSport {
+      display: flex;
+      p {
+        color: rgb(145, 146, 148);
+        justify-content: flex-start;
+      }
+    }
+  }
+  .weekly {
+    display: flex;
+    padding: 3px;
+    background-color: #c4c5c863;
+    border-radius: 6px;
+    &__title {
+      padding-right: 80px;
+      @include tablet{
+        padding-right: 50px;
+      }
+    }
+    &__num {
+      padding-right: 50px;
+    }
+  }
+  .itemTotal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .tab-item-main {
+      padding: 0 10px;
+      margin-bottom: 20px;
+      width: 25%;
+      @include tablet{
+        width: 50%;
+      }
+    }
+    .tab-item {
+      border-radius: 4px;
+    }
+    .body-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 5px;
+      margin-top: -15px;
+    }
+    .all-in {
+      padding: 4px 16px;
+      text-transform: uppercase;
+      border: 1px solid;
+      color: #0062c9;
+      border-radius: 4px;
+      background-color: transparent;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $padding-text;
+      background-color: #c4c5c863;
+      border-radius: 0 0 4px 4px;
+      position: relative;
+      z-index: 1;
+      transform: translateY(-2px);
+    }
+    .content-item-header {
+      position: relative;
+      padding: $padding-text;
+      background-color: #fff;
+      border-radius: 4px;
+      z-index: 2;
+      border: 1px solid gray;
+    }
+  }
+  .title1 {
+    padding-right: 30px;
+    padding-bottom: 10px;
+    color: #bfbfc8;
+    padding: 0 20px 0 20px;
+  }
+}

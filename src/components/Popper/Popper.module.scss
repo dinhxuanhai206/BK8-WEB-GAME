@@ -1,0 +1,8 @@
+.wrapper {
+	width: 100%;
+	min-height: 65px;
+	max-height: min((100vh - 96px) - 60px, 734px);
+	padding: 2px;
+	background-color: #f5f5f5;
+	cursor: pointer;
+}

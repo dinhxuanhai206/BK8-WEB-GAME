@@ -1,0 +1,28 @@
+@import "../../responsive.scss";
+.content{
+    width: 100%;
+    display: none;
+    @include mobile{
+        display: block;
+        margin-top: 50px;
+        .banner_Vip{
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            .image_banner{
+                width: 100%;
+                display: block;
+                margin: 0px auto;
+                background-position: center top;
+                background-repeat: no-repeat;
+                
+            }
+        
+            img{
+                width: 100%;
+            }
+        }
+    }
+        
+}

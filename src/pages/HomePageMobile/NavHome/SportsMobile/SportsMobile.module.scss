@@ -1,0 +1,55 @@
+@import "../../../../responsive.scss";
+.wrapper{
+    display: none;
+   background: rgb(244, 240, 240);
+   border-radius: 10px;
+    @include mobile{
+        display: block;
+        padding: 10px 10px;
+        margin: 20px 10px;
+        .block-item{
+           display: flex;
+           padding: 10px;
+           justify-content: space-between;
+           padding-bottom: 3px;
+           border-bottom: 0.5px solid rgb(215, 215, 216);
+           .img{
+            width: 50%;
+            .img-item{
+                width: 100%;
+            }
+           }
+           .block-right{
+             flex: 50%;
+             display: flex;
+             flex-direction: column;
+             align-items: flex-end;
+             .text{
+             font-size: 1.2rem;
+             color: #858585;
+             margin-bottom: 20px;
+             }
+             .btn-block{
+                display: flex;
+                gap: 8px;
+                .btn-desk{
+                    background: #9d9d9d;
+                    color: white;
+                    padding: 8px 15px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .btn-now{
+                    background: #0066d1;
+                    color: white;
+                    padding: 8px 15px;
+                    font-size: 1rem;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+             }
+           }
+        }
+    }
+}

@@ -1,0 +1,177 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  margin-top: 64px;
+  width: 100%;
+  margin-left: 20px;
+  @include tablet {
+    margin-left: 0px;
+  }
+  .monthly {
+    border-bottom: 1px dotted blue;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    .btn-monthly {
+      background-color: #0365d4;
+      color: white;
+      border: none;
+      padding: 15px 50px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    @include tablet {
+      width: 100%;
+    }
+  }
+  .table-wrapper {
+    margin-top: 10px;
+    color: #8e8c8c;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    @include tablet {
+      width: 100%;
+    }
+    .tr1 {
+      font-family: var(--menuFont);
+      font-size: 16px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      gap: 30px;
+      display: flex;
+      width: 100%;
+      .div1 {
+        display: flex;
+        width: 10%;
+      }
+      .div2 {
+        display: flex;
+        width: 40%;
+      }
+      .div3 {
+        display: flex;
+        width: 50%;
+      }
+    }
+
+    .tr2 {
+      border-top: 1px solid #ddd;
+      display: flex;
+      text-align: center;
+      line-height: 50px;
+      align-items: center;
+      justify-content: space-around;
+      height: 50px;
+      width: 100%;
+      .number {
+        display: flex;
+        width: 10%;
+        margin-left: 40px;
+        height: 100%;
+      }
+      .username {
+        display: flex;
+        width: 40%;
+        height: 100%;
+      }
+      .turnover {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        font-size: 12px;
+      }
+    }
+
+    .tr2:nth-child(2) {
+      background: #003b79;
+      color: white;
+      height: 50px;
+      margin-bottom: 10px;
+      width: 100%;
+
+      .number {
+        width: 50px;
+        height: 53px;
+        margin-left: 20px;
+        padding-left: 20px;
+        color: #003b79;
+        margin-right: 64px;
+        font-size: 12px;
+        margin-top: -5px;
+        transform: skew(168deg);
+        background: orange;
+        @include tablet {
+          margin-right: 20px;
+        }
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(3) {
+      background-color: #004ea1;
+      margin-bottom: 10px;
+      height: 50px;
+      color: white;
+      .number {
+        width: 50px;
+        height: 53px;
+        color: #003b79;
+        margin-left: 20px;
+        margin-right: 64px;
+        padding-left: 20px;
+        margin-top: -5px;
+        font-size: 12px;
+        transform: skew(168deg);
+        background: orange;
+        @include tablet {
+          margin-right: 20px;
+        }
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(4) {
+      background-color: #236ab6;
+      margin-bottom: 10px;
+      height: 50px;
+      color: white;
+      .number {
+        width: 50px;
+        height: 53px;
+        margin-left: 20px;
+        margin-right: 64px;
+        padding-left: 20px;
+        margin-top: -5px;
+        color: #003b79;
+        font-size: 14px;
+        transform: skew(168deg);
+        background: orange;
+        @include tablet {
+          margin-right: 20px;
+        }
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(5) {
+      border: none;
+    }
+  }
+}

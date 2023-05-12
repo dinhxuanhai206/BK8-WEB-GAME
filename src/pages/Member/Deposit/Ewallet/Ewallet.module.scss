@@ -1,0 +1,61 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  .inner {
+    .channel-block {
+      display: flex;
+      margin-top: 30px;
+      align-items: center;
+      .channel-option {
+        margin-right: 35px;
+        margin-left: 40px;
+        margin-top: -25px;
+        @include tablet {
+          margin-right: 25px;
+          margin-left: 20px;
+          font-size: 1.2rem;
+        }
+      }
+      .title-block {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+
+        .logo-img {
+          height: 100%;
+          border-radius: 5px;
+        }
+        .actives {
+          position: relative;
+          border: 0.5px solid blue;
+          border-radius: 5px;
+          overflow: hidden;
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-color: transparent blue blue transparent;
+            border-style: solid;
+            border-width: 8px 8px 8px 8px;
+            height: 0px;
+            width: 0px;
+          }
+        }
+        @include tablet {
+          .actives {
+            &::before {
+              border-width: 5px 5px 5px 5px;
+            }
+          }
+        }
+        .name {
+          font-size: 12px;
+          @include tablet {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

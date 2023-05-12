@@ -1,0 +1,82 @@
+@import '../../responsive.scss';
+
+.nav-filter{
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    li{
+        list-style-type: none;
+        text-transform: uppercase;
+        width: 160px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #858585;
+        font-family: 'AvenirLTStd';
+        transition: all .3s ease;
+        
+        &:hover{
+            background: #003a79;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .active{
+        background: #003a79;
+        color: #fff;
+    }
+
+    .tab-page{
+        display: flex;
+        width: 1128px;
+        overflow: auto;
+    }
+
+    .search-box{
+        flex: 1;
+        height: 40px;
+        background: #f2f2f2;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+
+        .input-search{
+            font-family: 'AvenirLTStd';
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            height: 16px;
+            color: #858585;
+            font-size: 16px;
+            background: #f2f2f2;
+        }
+    }
+
+    @include mobile{
+        background-color: #0066d1;
+        margin-bottom: 0.4em;
+
+        li{
+            color: #fff;
+            font-size: 12px;
+            &:hover{
+                background: #0066d1;
+                color: #fdb70e;
+                cursor: pointer;
+            }
+        }
+        .active{
+            color: #fdb70e;
+            background: unset;
+        }
+        
+    }
+}

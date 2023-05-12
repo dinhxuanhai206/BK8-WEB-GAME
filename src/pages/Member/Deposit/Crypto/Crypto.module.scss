@@ -1,0 +1,91 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  .Channel {
+    display: flex;
+    margin-top: 30px;
+    .Channel-title {
+      width: 23%;
+      margin-left: 40px;
+      @include tablet {
+        width: 26%;
+        margin-left: 0;
+        margin-right: 40px;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .select {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      @include tablet {
+        width: 100%;
+        padding: 8px;
+      }
+    }
+  }
+  .cryto-logo {
+    display: flex;
+    margin-top: 10px;
+    .cryto-title {
+      width: 125px;
+      margin: 20px 40px;
+    }
+    .cryto-block {
+      display: flex;
+      max-width: 390px;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+
+      .cryto-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 180px;
+        .name {
+          font-size: 11px;
+        }
+      }
+      .logo-img {
+        border-radius: 5px;
+        border: 0.5px solid gray;
+      }
+      .actives {
+        border: 0.5px solid blue;
+      }
+    }
+    @include tablet {
+      width: 100%;
+      margin-top: 20px;
+      gap: 10px;
+      .cryto-title {
+        width: 10%;
+      }
+      .cryto-block {
+        width: 100%;
+        .cryto-item {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          width: 46%;
+          .name {
+            font-size: 1rem;
+          }
+        }
+        .logo-img {
+          border-radius: 5px;
+          border: 0.5px solid gray;
+        }
+        .actives {
+          border: 0.5px solid blue;
+        }
+      }
+    }
+  }
+}

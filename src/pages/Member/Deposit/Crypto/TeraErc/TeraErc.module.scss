@@ -1,0 +1,230 @@
+@import "../../../../../responsive.scss";
+.wrapper {
+  .Scan {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+    .Scan-title {
+      width: 25%;
+      margin-right: 35px;
+      margin-left: 40px;
+      color: #6a8bc0;
+
+      @include tablet {
+        width: 30%;
+        margin-left: 0;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .qr-block {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+      @include tablet {
+        width: 100%;
+        gap: 15px;
+      }
+      .qr-left {
+        width: 30%;
+        // .img{
+        //     width: 20%;
+        // }
+        .save-qr {
+          margin: 10px 0;
+          padding: 3px 15px;
+          background-color: #808080;
+          color: white;
+          border-radius: 5px;
+        }
+        @include tablet {
+          width: 30%;
+          .img {
+            width: 100%;
+            .img-teraQR {
+              width: 100%;
+            }
+          }
+          .save-qr {
+            width: 100%;
+            margin: 5px 0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 1rem;
+          }
+        }
+      }
+      .qr-right {
+        width: 70%;
+        .p1 {
+          font-size: 1.6rem;
+          color: black;
+          font-weight: bold;
+        }
+        .p2 {
+          font-size: 1.6rem;
+          color: #959595;
+        }
+        .p3 {
+          font-size: 1.6rem;
+          color: #004997;
+        }
+        .p-bottom {
+          width: 100%;
+          margin-top: 10px;
+          line-height: 22px;
+          .p4 {
+            font-size: 1.4rem;
+            color: red;
+          }
+          .p5 {
+            font-size: 1.4rem;
+            color: red;
+          }
+        }
+        @include tablet {
+          width: 70%;
+          .p1 {
+            font-size: 1rem;
+          }
+          .p2 {
+            font-size: 1rem;
+            color: #959595;
+          }
+          .p3 {
+            font-size: 1rem;
+            color: #004997;
+          }
+          .p-bottom {
+            width: 100%;
+            margin-top: 10px;
+            line-height: 16px;
+            .p4 {
+              font-size: 1rem;
+            }
+            .p5 {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .desc-scan {
+    margin-left: 205px;
+    font-size: 12px;
+    color: red;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-left: 115px;
+      font-size: 1rem;
+    }
+  }
+  .send {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    .send-title {
+      width: 20%;
+      margin-right: 20px;
+      margin-left: 40px;
+      line-height: 20px;
+      color: #6a8bc0;
+      @include tablet {
+        width: 32%;
+        margin-left: 0;
+        padding-left: 25px;
+        margin-right: 0px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .address-block {
+      .code-block {
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        .code {
+          padding: 3px 15px;
+          background-color: #004997;
+          color: white;
+          border-radius: 5px;
+        }
+        .share {
+          background-color: #808080;
+          color: white;
+          width: 30px;
+          border-radius: 5px;
+        }
+      }
+      .btn-check {
+        background-color: #808080;
+        color: white;
+        margin-top: 15px;
+        padding: 8px 20px;
+        border-radius: 5px;
+      }
+      @include tablet {
+        width: 68%;
+        .code-block {
+          .code {
+            width: 88%;
+            font-size: 1rem;
+          }
+          .share {
+            width: 12%;
+            background-color: #808080;
+            color: white;
+            border-radius: 5px;
+          }
+        }
+        .btn-check {
+          padding: 5px 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .reminder {
+    margin-top: 20px;
+    margin-left: 35px;
+    border: 1px solid gray;
+    .title {
+      font-family: --mainFont;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+    .desc {
+      display: flex;
+      margin-bottom: 5px;
+
+      .num {
+        margin-left: 15px;
+        font-family: --mainFont;
+      }
+      .text-num {
+        margin-left: 5px;
+        font-size: 1.6rem;
+        font-family: --mainFont;
+      }
+    }
+    @include tablet {
+        margin-left: 15px;
+        padding-right: 5px;
+        .desc {
+          font-size: 1rem;
+    
+          .num {
+            font-size: 1rem;
+          }
+          .text-num {
+            font-size: 1rem;
+          }
+        }
+    }
+  }
+}

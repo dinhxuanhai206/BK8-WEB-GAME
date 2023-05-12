@@ -1,0 +1,33 @@
+.tab-page-logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .tab-items {
+    display: flex;
+    transition: all 0.5s;
+    align-items: center;
+    flex: 15%;
+    width: 15%;
+  }
+  .logo-img {
+    display: flex;
+    transition: all 0.5s;
+    align-items: center;
+    flex: 15%;
+    width: 15%;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    background: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    background: #fdb813;
+  }
+}

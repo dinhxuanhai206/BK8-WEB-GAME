@@ -1,0 +1,134 @@
+.wrapper {
+  .table-wrapper {
+    margin-top: 10px;
+    color: #8e8c8c;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    .tr1 {
+      font-family: var(--menuFont);
+      font-size: 16px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      gap: 50px;
+      display: flex;
+      width: 100%;
+      .div1 {
+        display: flex;
+        width: 20%;
+      }
+      .div2 {
+        display: flex;
+        width: 40%;
+      }
+      .div3 {
+        display: flex;
+        width: 40%;
+      }
+    }
+
+    .tr2 {
+      border-top: 1px solid #ddd;
+      display: flex;
+      text-align: center;
+      line-height: 35px;
+      align-items: center;
+      justify-content: space-around;
+      height: 35px;
+      width: 100%;
+      .number {
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        height: 100%;
+      }
+      .username {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        justify-content: center;
+      }
+      .turnover {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        font-size: 1.2rem;
+        justify-content: center;
+      }
+    }
+
+    .tr2:nth-child(2) {
+      background: #003b79;
+      color: white;
+      height: 35px;
+      margin-bottom: 10px;
+
+      .number {
+        width: 35px;
+        height: 38px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #003b79;
+        font-size: 1.2rem;
+        margin-top: -5px;
+        transform: skew(168deg);
+        background: orange;
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(3) {
+      background-color: #004ea1;
+      margin-bottom: 10px;
+      height: 35px;
+      color: white;
+      .number {
+        width: 35px;
+        height: 38px;
+        color: #003b79;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -5px;
+        font-size: 1.2rem;
+        transform: skew(168deg);
+        background: orange;
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(4) {
+      background-color: #236ab6;
+      margin-bottom: 10px;
+      height: 35px;
+      color: white;
+      .number {
+        width: 35px;
+        height: 38px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -5px;
+        color: #003b79;
+        font-size: 14px;
+        transform: skew(168deg);
+        background: orange;
+      }
+      .username {
+        margin-left: 0px;
+      }
+      .turnover {
+        margin-left: 0px;
+      }
+    }
+    .tr2:nth-child(5) {
+      border: none;
+    }
+  }
+}

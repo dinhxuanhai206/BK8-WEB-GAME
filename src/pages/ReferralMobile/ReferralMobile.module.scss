@@ -1,0 +1,48 @@
+@import "../../responsive.scss";
+.wrapper {
+  display: none;
+  @include mobile {
+    display: block;
+    margin-top: 40px;
+    .refrral-menu {
+      display: flex;
+      justify-content: space-around;
+      background: #0066d1;
+      width: 100%;
+      .title {
+        padding: 10px;
+        color: #eaecf0;
+        font-family: sans-serif;
+      }
+    }
+    .title-block{
+        background-color: #fcb811;
+        padding: 20px 30px;
+        .desc{
+            font-size: 1rem;
+            font-family: sans-serif;
+            font-weight: 600;
+            .span{
+                color: #0066d1
+            }
+        }
+        .name{
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            .input{
+                width: 70%;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .btn-share{
+                width: 30%;
+                color: white;
+                border-radius: 5px;
+                background: -webkit-linear-gradient(top, #0062c9 0%, #003679 102%);
+            }
+        }
+    }
+  }
+}

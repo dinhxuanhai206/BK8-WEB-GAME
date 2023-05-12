@@ -1,0 +1,31 @@
+@import "../../../responsive.scss";
+.wrapper {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  .inner {
+    .referral-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      padding-bottom: 10px;
+      border-bottom: 0.5px solid #c5c1c1;
+      .referral-title {
+      }
+      .title-block {
+        display: flex;
+        gap: 20px;
+        .with-title {
+          padding: 8px 20px;
+          background: rgb(201, 201, 202);
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .active {
+          background: blue;
+          color: white;
+        }
+      }
+    }
+  }
+}

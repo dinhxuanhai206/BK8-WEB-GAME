@@ -1,0 +1,53 @@
+@import "../../../responsive.scss";
+
+.wrapper{
+    display: none;
+    @include mobile{
+        display: block;
+        margin-bottom: 20px;
+        .block-title{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .title{
+                font-weight: bold;
+                color: black;
+            }
+            .link{
+                color: blue;
+            }
+        }
+        .mySwiper{
+            width: 100%;    
+            height: 100%;
+            .swiper-slide{
+                background: rgb(244, 242, 242);
+                padding: 10px;
+                border-radius: 5px;
+              .block{
+                .image{
+                    width: 100%;
+                }
+                  .title{
+                      font-size: 1.4rem;
+                      font-weight: bold;
+                      margin-bottom: 5px;
+                      color: black;
+                  }
+                  .desc{
+                      font-size: 1.2rem;
+                      color: #666666;
+                      margin-bottom: 5px;
+                  }
+                  .btn{
+                    color: blue;
+                    font-size: 1.6rem;
+                  }
+              }
+            }
+        }
+        .custom-pagination {
+            display: none;
+        }
+    }
+}

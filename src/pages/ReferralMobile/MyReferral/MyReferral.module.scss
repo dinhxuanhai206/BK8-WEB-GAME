@@ -1,0 +1,140 @@
+@import "../../../responsive.scss";
+.wrapper {
+  display: none;
+  @include mobile {
+    display: block;
+    .referral-top {
+      padding: 12px;
+      padding-bottom: 35px;
+      border-bottom: 2px solid #e2e2e2;
+      .title {
+        color: #0066d1;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+      }
+      .block-option {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-left: 15px;
+        .input {
+        }
+        .option {
+          .option-title {
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-top: -3px;
+          }
+          .block {
+            padding: 20px;
+            background-image: url("../../../assets/images/img-promosmobile/referral-ticket-1.png");
+            color: white;
+            font-family: sans-serif;
+            .ticket {
+              display: flex;
+              gap: 10px;
+              .p {
+                width: 108px;
+              }
+            }
+          }
+        }
+      }
+      .button {
+        margin-top: 15px;
+        display: block;
+        text-align: center;
+        width: 100%;
+        .btn-invite {
+          width: 100%;
+          background: linear-gradient(to bottom, #0062c9 0%, #003679 102%);
+          padding: 10px 0;
+          border-radius: 5px;
+          color: white;
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .referral-bottom {
+      padding: 12px;
+      .title {
+        font-weight: bold;
+      }
+      .invite {
+        display: flex;
+        width: 100%;
+        .invite-title {
+          background-color: #858585;
+          color: #fff;
+          font-weight: 500;
+          width: 40%;
+          border-bottom: 1px solid white;
+          padding: 5px 10px;
+          font-family: sans-serif;
+        }
+        .invite-digit {
+          background-color: #e5e5e5;
+          font-weight: 600;
+          width: 60%;
+          border-bottom: 1px solid white;
+          padding: 5px 10px;
+        }
+      }
+      .term {
+        text-decoration: underline;
+        color: #0062c9;
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+    .term-block {
+      position: fixed;
+      display: block;
+      bottom: 40%;
+      left: 10%;
+      width: 80%;
+      border-radius: 8px;
+      background: #e1e1e1;
+      .term-title {
+        line-height: 33px;
+        padding-top: 20px;
+        color: #6a8cb0;
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+      }
+      .desc {
+        display: flex;
+        margin-bottom: 5px;
+
+        .num {
+          margin-left: 20px;
+          font-family: --mainFont;
+          color: #6a6a6a;
+        }
+        .text-num {
+          margin-left: 5px;
+          font-size: 1.4rem;
+          font-family: sans-serif;
+          margin-right: 15px;
+          color: #6a6a6a;
+        }
+      }
+      .close {
+        display: block;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 15px;
+        .btn-close {
+          color: #fff;
+          font-size: 1.8rem;
+          background-color: #777;
+          border-radius: 6px;
+          padding: 15px 45px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

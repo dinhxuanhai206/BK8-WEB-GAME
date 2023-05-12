@@ -1,0 +1,64 @@
+/* .mymodal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	border: 1px solid #ccc;
+	background: #fff;
+	overflow: auto;
+	border-radius: 4px;
+	outline: none;
+	padding: 20px;
+}
+
+.myoverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+ */
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9;
+	overflow-x: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.inner {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+    color:#696969;
+	padding: 20px 70px;
+    border-radius: 5px;
+	z-index: 20;
+    font-size: 2.4rem;
+	cursor: unset;
+}
+
+.header {
+	margin-bottom:20px;
+}
+
+.button-close {
+    background-color: #999;
+    color:white;
+    padding:5px 20px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}

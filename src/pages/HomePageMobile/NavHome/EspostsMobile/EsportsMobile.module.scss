@@ -1,0 +1,27 @@
+@import "../../../../responsive.scss";
+.wrapper{
+    display: none;
+   background: rgb(244, 240, 240);
+   border-radius: 10px;
+    @include mobile{
+        display: flex;
+        padding: 25px 10px;
+        margin: 20px 10px;
+        width: 100%;
+        .block-item{
+          width: 25%;
+         height: 108px;
+          text-align: center;
+           .img{
+            width: 100%;
+            .img-item{
+                width: 100%;
+            }
+           }
+           .text{
+            font-size: 10px;
+            color: #858585;
+           }
+        }
+    }
+}

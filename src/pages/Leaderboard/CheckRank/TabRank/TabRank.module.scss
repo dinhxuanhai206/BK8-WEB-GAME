@@ -1,0 +1,47 @@
+.wrapper {
+  width: 100%;
+  .block-left {
+    width: 100%;
+    .top-image {
+      margin-left: -25px;
+      margin-bottom: -28px;
+    }
+    .block {
+      display: flex;
+      .tab-page-logo {
+        background: #0000;
+        height: 110px;
+        .tab-items {
+          list-style-type: none;
+          transition: all 0.5s;
+          text-align: center;
+          height: 100%;
+        }
+        .logo-img {
+          padding: 16px 18px 0 18px;
+          border: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .active {
+          background: #1393fc;
+          p {
+            color: white;
+          }
+        }
+        p {
+          margin-top: 4px;
+          margin-bottom: 10px;
+          color: rgb(151, 147, 147);
+        }
+      }
+    }
+  }
+  .block-right{
+    flex: 80%;
+  }
+}
+
+/////////////////////

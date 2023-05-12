@@ -1,0 +1,167 @@
+@import 'normalize.css';
+@import '../../responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--primary: #FDB813;
+	--black: #000;
+	--textColor: #333;
+	--mainFont: 'AvenirNextLTPro', sans-serif;
+	--menuFont: 'AvenirLTStd', sans-serif;
+
+	//Default Layout
+	--defaultLayoutHeaderHeight: 60px;
+	--defaultLayoutWidth: 1440px;
+	--defaultLayoutWidthMobile: 480px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		width: 5px;
+    	height: 5px;
+		border-radius: 1vw;
+	}
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: 6px;
+	}
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 6px;
+	}
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: rgba(0, 0, 0, 0.2);
+	}
+
+	@include mobile{
+		font-size: 50% !important;
+	}
+	@include tablet{
+		font-size: 55% !important;
+	}
+}
+
+body {
+	font-family: var(--mainFont);
+	font-size: 1.6rem;
+	line-height: 1.5;
+	text-rendering: optimizeSpeed;
+	color: var(--textColor);
+}
+
+button,
+input,
+[tabindex] {
+	outline: none;
+	border: none;
+}
+
+a[href] {
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+// Fonts embed
+@font-face {
+	font-family: AvenirLTStd;
+	src: url('/assets/fonts/AvenirLTStd-Light.woff2');
+	font-weight: lighter;
+}
+@font-face {
+	font-family: AvenirNextLTPro;
+	src: url('/assets/fonts/AvenirNextLTPro-Bold.woff2');
+	font-weight: bold;
+}
+@font-face {
+	font-family: AvenirNextLTPro;
+	src: url('/assets/fonts/AvenirNextLTPro-Demi.ttf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: AvenirNextLTPro;
+	src: url('/assets/fonts/AvenirNextLTPro-Regular.ttf');
+	font-weight: 400;
+}
+@font-face {
+	font-family: AvenirLTStd;
+	src: url('/assets/fonts/AvenirLTStd-Light.woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: AvenirLT45;
+	src: url('/assets/fonts/AvenirLT45-Book.woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: AvenirLT45;
+	src: url('/assets/fonts/AvenirLT95-Black.woff2');
+	font-weight: 900;
+}
+@font-face {
+	font-family: Limerick;
+	src: url('/assets/fonts/Limerick-DemiBold.woff');
+	font-weight: 600;
+}
+@font-face {
+	font-family: Limerick;
+	src: url('/assets/fonts/Limerick-ExtraBold.woff');
+	font-weight: 800;
+}
+
+.container {
+    min-width: 1000px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 19px;
+	@include mobile {
+		min-width: 320px;
+		max-width: 480px;
+		margin: 0 auto;
+		padding: 0 14px;
+	}
+	@include tablet {
+        min-width:unset;
+		max-width: 1023px;
+		margin: 0 auto;
+		padding: 0 14px;
+    }
+}
+
+.swiper-pagination{
+	text-align: right;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+	@include mobile{
+		text-align: center;
+		padding-right: 0;
+		padding-bottom: 0;
+		bottom: -5px;
+	}
+	@include tablet{
+		text-align: center;
+		padding-right: 0;
+		padding-bottom: 0;
+		bottom: -5px;
+	}
+}
+
+.css-1okebmr-indicatorSeparator{
+    display: none;
+}

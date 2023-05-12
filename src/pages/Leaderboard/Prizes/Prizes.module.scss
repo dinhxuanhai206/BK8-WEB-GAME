@@ -1,0 +1,292 @@
+@import "../../../responsive.scss";
+.wrapper-block {
+  display: flex;
+  width: 100%;
+  padding-right: 100px;
+  @include tablet{
+    padding-right: 0px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin-top: 65px;
+  margin-left: 20px;
+  @include tablet{
+    margin-left: 0px;
+  }
+  .img-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 7, 18, 0.406);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block-image {
+      position: relative;
+      max-width: 600px;
+      background: #d1cece;
+      padding: 50px 0;
+      .img-infoClose {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .img-clock {
+        width: 30%;
+        margin-left: 210px;
+      }
+      .tt {
+        color: #438fe1;
+        margin-top: 50px;
+        padding-left: 50px;
+      }
+      .text {
+        color: gray;
+        padding-left: 50px;
+      }
+      .btn-close {
+        padding: 10px 60px;
+        background: gray;
+        border-radius: 4px;
+        margin-left: 220px;
+        color: #ffffff;
+        margin-top: 50px;
+        margin-bottom: -20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted blue;
+    padding-bottom: 5px;
+    @include tablet{
+      width: 100%;
+      gap: 20px;
+    }
+  }
+  .monthly {
+    padding-left: 30px;
+    margin-bottom: 5px;
+    width: 100%;
+    .btn-monthly {
+      background-color: #0365d4;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      @include tablet{
+        padding: 10px 20px;
+      }
+    }
+  }
+  .date {
+    display: flex;
+    padding-right: 10px;
+    .month {
+      .month-select {
+        padding: 15px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        @include tablet{
+          padding: 9px 15px;
+        }
+      }
+    }
+    .year {
+      margin-left: 15px;
+      .year-select {
+        padding: 15px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        @include tablet{
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+.table-wrapper {
+  margin-top: 10px;
+  color: #8e8c8c;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  @include tablet{
+  }
+  .tr1 {
+    font-family: var(--menuFont);
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    gap: 0px;
+    display: flex;
+    width: 100%;
+    .div1 {
+      display: flex;
+      width: 10%;
+    }
+    .div2 {
+      display: flex;
+      width: 70%;
+      margin-left: 50px;
+    }
+    .div3 {
+      display: flex;
+      width: 20%;
+    }
+  }
+
+  .tr2 {
+    border-top: 1px solid #ddd;
+    display: flex;
+    text-align: center;
+    line-height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+
+    .number {
+      display: flex;
+      width: 10%;
+      height: 100%;
+      margin-left: 35px;
+    }
+    .username {
+      display: flex;
+      width: 70%;
+      font-size: 12px;
+      height: 100%;
+      text-transform: uppercase;
+      @include tablet{
+        font-size: 1rem;
+        display: block;
+        text-transform:lowercase;
+      }
+    }
+    .prizes-img{
+      display: flex;
+      width: 20%;
+      height: 100%;
+      font-size: 1.2rem;
+      text-decoration: underline;
+      margin-left: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+      @include tablet{
+        font-size: 1rem;
+      }
+    }
+    .prizesInfo{
+      margin-top: 20px;
+    }
+  }
+
+  .tr2:nth-child(2) {
+    background: #003b79;
+    color: white;
+    height: 50px;
+    margin-bottom: 10px;
+
+    .number {
+      width: 50px;
+      height: 53px;
+      margin-left: 20px;
+      padding-left: 15px;
+      color: #003b79;
+      font-size: 12px;
+      margin-top: -5px;
+      margin-right: 56px;
+      transform: skew(168deg);
+      background: orange;
+      @include tablet{
+         margin-right: 10px;
+      }
+    }
+    .username {
+      margin-left: 0px;
+    }
+    .turnover {
+      margin-left: 0px;
+    }
+  }
+  .tr2:nth-child(3) {
+    background-color: #004ea1;
+    margin-bottom: 10px;
+    height: 50px;
+    color: white;
+    .number {
+      width: 50px;
+      height: 53px;
+      color: #003b79;
+      margin-left: 20px;
+      margin-top: -5px;
+      padding-left: 15px;
+      margin-right: 56px;
+      font-size: 12px;
+      transform: skew(168deg);
+      background: orange;
+      @include tablet{
+        margin-right: 10px;
+     }
+    }
+    .username {
+      margin-left: 0px;
+    }
+    .turnover {
+      margin-left: 0px;
+    }
+  }
+  .tr2:nth-child(4) {
+    background-color: #236ab6;
+    margin-bottom: 10px;
+    height: 50px;
+    color: white;
+    .number {
+      width: 50px;
+      height: 53px;
+      color: #003b79;
+      margin-left: 20px;
+      margin-top: -5px;
+      padding-left: 15px;
+      margin-right: 56px;
+      font-size: 12px;
+      transform: skew(168deg);
+      background: orange;
+      @include tablet{
+        margin-right: 10px;
+     }
+    }
+    .username {
+      margin-left: 0px;
+    }
+    .turnover {
+      margin-left: 0px;
+    }
+  }
+  .tr2:nth-child(5) {
+    border: none;
+  }
+  .pris{
+    display: none;
+  }
+}

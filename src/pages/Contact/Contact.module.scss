@@ -1,0 +1,68 @@
+@import "../../responsive.scss";
+.wrapper{
+    display: none;
+    margin-top: 50px;
+    border-top: 1px solid rgb(59, 59, 245);
+    margin-bottom: 70px;
+    @include mobile{
+        display: block;
+        .chat{
+            display: flex;
+             align-items: center;
+             padding: 0 30px;
+             border-bottom: 1px solid rgb(210, 210, 250);
+            cursor: pointer;
+            height: 75px;
+            .img{
+                width: 11%;
+                padding: 0 5px;
+                .img-chat{
+                    width: 100%;
+                }
+            }
+            .block{
+                padding-left: 20px;
+                margin-top: -2px;
+                .title{
+                    color: #6a8cb0;
+                    font-size: 14px;
+                    font-family: sans-serif;
+                }
+                .desc{
+                    font-size: 12px;
+                    font-family: sans-serif;
+                    color: #7e8c8d;
+                }
+            }
+        }
+        .we-chat{
+            display: flex;
+             align-items: center;
+             padding: 0 30px;
+             border-bottom: 1px solid rgb(210, 210, 250);
+            cursor: pointer;
+            height: 75px;
+            .img-we{
+                width: 10%;
+                .img-wechat{
+                    width: 100%;
+                }
+            }
+            .block{
+                padding-left: 25px;
+                margin-top: -2px;
+                .title{
+                    color: #6a8cb0;
+                    font-size: 14px;
+                    font-family: sans-serif;
+                }
+                .desc{
+                    font-size: 12px;
+                    font-family: sans-serif;
+                    color: #7e8c8d;
+                }
+            }
+        }
+
+    }
+}

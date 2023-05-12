@@ -1,0 +1,475 @@
+@import "../../responsive.scss";
+.wrapper-video {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  width: 100%;
+
+  .video {
+    width: 55%;
+    .video-title {
+      font-family: "mainFont";
+      margin-bottom: 10px;
+      margin-left: 15px;
+    }
+    .video-block {
+      .player-wrapper {
+        background: #0a1623;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+      }
+      .player-wrapper-tablet {
+        display: none;
+        background: #034e9e;
+        width: 100%;
+        padding-bottom: 30px;
+      }
+      .video-img {
+        .img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+    @include tablet {
+      .video-title {
+        font-size: 1.2rem;
+      }
+      .video-block {
+        .player-wrapper {
+          display: none;
+        }
+        .player-wrapper-tablet {
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding-bottom: 20px;
+        }
+        .video-img {
+          height: 100px;
+          .img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .block-right {
+    width: 45%;
+
+    .matches {
+      .block-title {
+        display: flex;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          font-family: "mainFont";
+          margin-bottom: 8px;
+          font-size: 1.6rem;
+        }
+        .link {
+          color: white;
+          background: #013b7a;
+          padding: 5px 15px;
+          font-size: 1.2rem;
+          margin-top: -10px;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
+      .banner {
+        max-width: 100%;
+        .matches-img {
+          width: 100%;
+        }
+      }
+      @include tablet {
+        .block-title {
+          .title {
+            font-size: 1.2rem;
+          }
+          .link {
+            padding: 4px 10px;
+            font-size: 1rem;
+          }
+        }
+        .banner {
+          max-width: 100%;
+          height: 100px;
+          .matches-img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .casio {
+    max-width: 100%;
+
+    .title {
+      font-family: "mainFont";
+      margin-bottom: 10px;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+    .wrapper-swiper {
+      width: 100%;
+      .swiper {
+        width: 100%;
+        .swiper-slice {
+          width: 100%;
+          .baccarat {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    @include tablet {
+      .title {
+        font-size: 1.2rem;
+      }
+      .wrapper-swiper {
+        width: 100%;
+        .swiper {
+          width: 100%;
+          height: 150px;
+          .baccarat {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.wrapper-game {
+  margin-bottom: 40px;
+
+  .block-title {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-family: "mainFont";
+      margin-bottom: 10px;
+    }
+    .link {
+      text-decoration: underline;
+      color: #013b7a;
+      font-size: 12px;
+      margin-top: -10px;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .block-game {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .title-most {
+      display: none;
+      font-weight: bold;
+      font-family: --mainFont;
+      @include mobile {
+        display: block;
+      }
+    }
+    .title-check {
+      display: none;
+      font-family: --mainFont;
+      margin-bottom: 10px;
+      @include mobile {
+        display: block;
+      }
+    }
+
+    .game-banner {
+      flex: 45%;
+      height: 234px;
+      .banner-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .list-game {
+      flex: 53%;
+      height: 234px;
+      display: flex;
+      overflow-x: scroll;
+      background: #f0f0f2;
+      padding: 20px 26px;
+      padding-bottom: 0;
+      gap: 20px;
+      text-align: center;
+
+      .item {
+        .game-img {
+          width: 150px;
+          .img {
+            max-width: 100%;
+          }
+        }
+        .title {
+          font-size: 16px;
+          white-space: nowrap;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          margin-top: -3px;
+        }
+        .block {
+          display: flex;
+          justify-content: center;
+          margin-top: -3px;
+          .desc {
+            font-size: 14px;
+            color: #858587;
+            font-weight: 100;
+          }
+          .game-logo {
+            width: 70%;
+          }
+        }
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+    .list-game::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    .list-game::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-game::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+ 
+    @include tablet {
+      display: flex;
+      width: 100%;
+      @include mobile {
+        display: block;
+        .game-banner {
+          display: none;
+        }
+      }
+      .block-game {
+        display: flex;
+        align-items: flex-start;
+      }
+      .game-banner {
+        flex: 50%;
+        height: 150px;
+        .banner-img {
+          object-fit: contain;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .list-game {
+        flex: 53%;
+        height: 150px;
+        background: #f0f0f2;
+        padding: 10px 10px;
+        gap: 15px;
+
+        .item {
+          .game-img {
+            width: 70px;
+            height: 70px;
+            .img {
+              max-width: 100%;
+              height: 100%;
+            }
+          }
+          .title {
+            font-size: 0.8rem;
+            width: 70px;
+            margin-top: 3px;
+          }
+          .block {
+            display: flex;
+            justify-content: center;
+            margin-top: 3px;
+            .desc {
+              font-size: 0.8rem;
+              color: #858587;
+              font-weight: 100;
+            }
+            .game-logo {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper-sport {
+  height: 240px;
+  margin-bottom: 3px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-top: 1px dotted rgb(198, 198, 198);
+  border-bottom: 1px dotted rgb(198, 198, 198);
+  .titles {
+    margin-bottom: 10px;
+    font-family: "mainFont";
+    margin-left: 15px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      font-size: 1.8rem;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-right: 80px;
+      padding-left: 25px;
+
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .wrapper-item {
+          flex: 45%;
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          padding-bottom: 30px;
+          border-bottom: 1px dotted black;
+
+          .sport-img {
+            max-width: 205px;
+            .img {
+              width: 100%;
+            }
+          }
+          .block {
+            .title {
+              font-size: 14px;
+              color: black;
+              margin-right: 100px;
+              font-family: mainfont;
+              font-weight: bold;
+              margin-top: 20px;
+            }
+            .desc {
+              font-size: 1.2rem;
+              color: #666;
+              margin-right: 60px;
+              font-family: mainfont;
+              margin: 5px 0 20px 0;
+            }
+            .link {
+              color: #1582f7;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    .swiper-slide {
+      font-size: 1.4rem;
+    }
+    .wrapper-item {
+      flex: 45%;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px dotted black;
+
+      .sport-img {
+        width: 205px;
+        .img {
+          width: 100%;
+        }
+      }
+      .block {
+        .title {
+          font-size: 1.4rem;
+        }
+        .desc {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+        .link {
+          color: #1582f7;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.banner-mobile {
+  display: none;
+  @include mobile {
+    background-image: url("../../assets/images/home/home-applite-download-bg-new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+    .title {
+      font-size: 1.4rem;
+      color: white;
+      margin-left: 47%;
+      width: 70%;
+      padding-top: 15px;
+    }
+    .app-block {
+      margin-left: 37%;
+      width: 70%;
+      padding-top: 10px;
+      display: flex;
+      gap: 2px;
+      padding-bottom: 10px;
+       .btn-block{
+        width: 40%;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        margin-right: 5px;
+       }
+      .title-app {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        padding-top: 2px;
+        border-radius: 3px;
+      }
+
+      .link {
+        font-size: 1rem;
+        color: white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

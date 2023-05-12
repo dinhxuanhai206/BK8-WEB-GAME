@@ -1,0 +1,64 @@
+@import "../../responsive.scss" ;
+.Aboutus-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 70px;
+display: none;
+  @include mobile {
+    display: block;
+    .inner {
+      .tab-aboutus {
+        display: flex;
+        width: 100%;
+        margin: 33px 0 0px 0;
+        background: #0066d1;
+        height: 50px;
+        justify-content: space-between;
+
+        &__items {
+           width: 33%;
+          height: 50px;
+          transition: all 0.3s;
+          &:hover button {
+            cursor: pointer;
+            color: #fff;
+          }
+        }
+
+        &__name {
+          font-size: 11px;
+          background: #0066d1;
+          color: #fff;
+          justify-content: center;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          cursor: pointer;
+          height: 100%;
+        }
+
+        .active button {
+          color: orange;
+          background: none;
+        }
+      }
+
+      .sponsrors-body {
+        width: 100%;
+      }
+    }
+    .link{
+      font-size: 12px;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid rgb(208, 208, 245);
+      font-weight: bold;
+      color: blue;
+      text-align: center;
+    }
+  }
+}

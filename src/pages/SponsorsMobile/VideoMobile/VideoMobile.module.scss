@@ -1,0 +1,74 @@
+@import "../../../responsive.scss";
+.video-wrapper {
+  @include mobile {
+    .menu {
+      margin-bottom: 5px;
+      border-bottom: 0.2px solid black;
+    }
+    .tab-Video {
+      display: flex;
+      gap: 10px;
+      font-family: var(--mainFont);
+      font-size: 14px;
+      opacity: 0.9;
+      cursor: pointer;
+      margin: 0 30px;
+
+      .tab-Video__items {
+        width: 100%;
+      }
+
+      &__items {
+        width: 160px;
+        height: 40px;
+        transition: all 0.3s;
+
+        &:hover button {
+          cursor: pointer;
+          background: #fdbf2b;
+          color: black;
+        }
+      }
+
+      &__name {
+        text-align: center;
+        font-size: 14px;
+        color: gray;
+        border-radius: 5px;
+        justify-content: flex-start;
+        display: inline-block;
+        align-items: left;
+        width: 100%;
+        height: 100%;
+        background-color: #e3e3e3;
+      }
+
+      .active button {
+        background: #fdbf2b;
+        color: #000000;
+      }
+    }
+
+    .video-list {
+      display: flex;
+      width: 100%;
+      //gap: 10px;
+      justify-content: space-around;
+      align-items: center;
+      //padding: 0 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      .video-item {
+        //flex: 47%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        text-align: center;
+        .video-url {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

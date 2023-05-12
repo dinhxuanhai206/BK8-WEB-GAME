@@ -1,0 +1,86 @@
+@import "../../responsive.scss";
+
+@mixin common {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col-5 {
+  width: 20%;
+  @include tablet{
+    width: 25%
+  }
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-3 {
+  width: 33.33%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.list-item {
+  @include common();
+
+  .list-wrapper,
+  .list-banner-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @include tablet {
+      .col-3 {
+        width: 50%;
+      }
+      .col-5 {
+        width: 25%;
+      }
+    }
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+  }
+
+  .slide-banner-item {
+    // width: 544px;
+    height: 486px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    .slide-item {
+      background: #f2f2f2;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+  @include tablet {
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+}
+
+.list-item-mobile {
+  @include common();
+  padding: 0 8px;
+}

@@ -1,0 +1,205 @@
+.wrapper{
+    width: 100%;
+    position: absolute;
+    z-index: 2000;
+}
+
+.sidebar-left{
+    left: 0;
+    position: fixed;
+    transition: all .5s;
+    width: 52px;
+    height: 250px;
+    &:hover {
+        .left{
+            transform: translateX(-52px);
+        }
+    }
+
+    &:hover {
+        .left-hover{
+            transform: translateX(0);
+        }
+    }
+
+    .left{
+        width: 52px;
+        position: absolute;
+        transition: all .3s;
+        z-index: 10;
+    }
+
+    .left-hover{
+        width: 52px;
+        height: 1000px;
+        position: absolute;
+        transition: all .3s;
+        transform: translateX(-52px);
+        background-color: #f7f7f7;
+        z-index: 9;
+
+        >span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 56px;
+            padding:0 5px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: url('../../../assets/images/sidebar/span-after.png') repeat;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+
+.sidebar-right{
+    right: 0;
+    position: fixed;
+    transition: all .5s;
+    width: 52px;
+    height: 250px;
+    &:hover {
+        .right{
+            transform: translateX(52px);
+        }
+    }
+
+    &:hover {
+        .right-hover{
+            transform: translateX(0);
+        }
+    }
+
+    .right{
+        width: 52px;
+        position: absolute;
+        transition: all .3s;
+        z-index: 10;
+    }
+
+    .right-hover{
+        width: 52px;
+        height: 1000px;
+        position: absolute;
+        transition: all .3s;
+        transform: translateX(52px);
+        background-color: #f7f7f7;
+        z-index: 9;
+
+        >span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 56px;
+            padding:0 5px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: url('../../../assets/images/sidebar/span-after.png') repeat;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+.sticky{
+    top:0;
+    position: fixed;
+}
+
+.left-icon-1{
+    width: 26px;
+    height: 26px;
+    background-position: -471px -46px;
+    transform: rotate(180deg);
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/global/icons.png');
+}
+.left-icon-2{
+    width: 27px;
+    height: 32px;
+    background-position: -1272px -2px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/global/icons.png');
+    &:hover{
+        background-position: -1248px -36px;
+    }
+}
+.left-icon-3{
+    width: 26px;
+    height: 33px;
+    background-position: -1186px -37px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/global/icons.png');
+    &:hover{
+        background-position: -1174px -2px;
+    }
+}
+
+.left-icon-4{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/sidebar/icon-dld-app-off.png');
+    &:hover{
+        background-image: url('../../../assets/images/sidebar/icon-dld-app-on.png');
+    }
+}
+
+.right-icon-1{
+    width: 26px;
+    height: 26px;
+    background-position: -471px -46px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/global/icons.png');
+}
+.right-icon-2{
+    width: 42px;
+    height: 41px;
+    display: inline-block;
+    background-image: url('../../../assets/images/sidebar/zalo_of.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.right-icon-3{
+    width: 42px;
+    height: 41px;
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/sidebar/telegram_of.png');
+}
+
+.right-icon-4{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/sidebar/icons_side_menu_livechat.png');
+    background-size: contain;
+}

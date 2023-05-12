@@ -1,0 +1,32 @@
+const images = {
+    normal: require("../assets/images/img-member/img-header/user-normal.png"),
+    coin: require("../assets/images/img-member/img-header/coin.jfif"),
+    key: require("../assets/images/img-member/img-header/upperElement_restoreIcon.png"),
+    user: require("../assets/images/img-member/img-header/icon-verified-bday.png"),
+    mail: require("../assets/images/img-member/img-header/icon-verified-email.png"),
+    phone: require("../assets/images/img-member/img-header/m-icon-verified-phone.png"),
+    bank: require("../assets/images/img-member/img-header/m-icon-verified-bank.png"),
+    iconSmart: require("../assets/images/img-member/img-header/icon-smart.png"),
+    iconSmartWhite: require("../assets/images/img-member/m-icon-smart.png"),
+    seamless: require("../assets/images/img-member/img-header/seamless-on.png"),
+    // ////////////////////////////////
+    Mask:  require("../assets/images/img-member/img-messenger/mark-as-read.png"),
+    delete:  require("../assets/images/img-member/img-messenger/mark-as-delete.png"),
+    flag:  require("../assets/images/img-member/img-messenger/tContent_messagingContent_FLAG.png"),
+    flagRed:  require("../assets/images/img-member/img-messenger/tContent_messagingContent_FLAG_Red.png"),
+    secDelete:  require("../assets/images/img-member/img-messenger/tContent_messagingContent_TRASH.png"),
+    teraQR: require("../assets/images/img-member/img-deposit/teraQR.png"),
+    teraercQR: require("../assets/images/img-member/img-deposit/teraercQR.png"),
+    ETHQR: require("../assets/images/img-member/img-deposit/ETHQR.png"),
+    BTCQR: require("../assets/images/img-member/img-deposit/BTCQR.png"),   
+    DNQR: require("../assets/images/img-member/img-deposit/DNQR_ori.png"),
+    FPQR: require("../assets/images/img-member/img-deposit/FPQR_ori.png"),
+    account1: require("../assets/images/img-promosmobile/profile.png"),
+    account2: require("../assets/images/img-promosmobile/password.png"),
+    account3: require("../assets/images/img-promosmobile/game.png"),
+    account4: require("../assets/images/img-promosmobile/messaging.png"),
+    account5: require("../assets/images/img-promosmobile/details.png"),
+    account6: require("../assets/images/img-promosmobile/referral.png"),
+
+}
+export default images

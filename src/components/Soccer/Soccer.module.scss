@@ -1,0 +1,105 @@
+@import "../../responsive.scss";
+.wrapper {
+  margin: 30px auto;
+  margin-bottom: 30px;
+
+  .title {
+    font-family: "mainFont";
+    margin-bottom: 15px;
+  }
+  .title-club {
+    font-family: "mainFont";
+    margin-bottom: 14px;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    display: none;
+  }
+
+  .football {
+    display: flex;
+    text-align: center;
+    background: #f7f8fa;
+    padding: 20px 20px;
+    justify-content: space-between;
+    gap: 15px;
+    .item {
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      .img-logo {
+        .logo {
+          width: 100%;
+        }
+      }
+      .div-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+          font-family: "mainBoldFont";
+          font-weight: bold;
+          font-size: 1.6rem;
+          align-items: center;
+          padding: 0 8px;
+          line-height: 20px;
+        }
+        .text {
+          font-family: "mainFont";
+          font-size: 1.3rem;
+          white-space: break-spaces;
+          text-align: center;
+          color: #646464;
+          padding: 0 10px;
+        }
+        .texts {
+          font-family: "mainFont";
+          font-size: 1.3rem;
+          white-space: break-spaces;
+          text-align: center;
+          color: #646464;
+        }
+        .date {
+          font-family: "mainFont";
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    .football {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      .item {
+        width: 15%;
+        padding: 0 0px;
+        .img-logo {
+          .logo {
+            width: 60%;
+          }
+        }
+        .div-text {
+          .name {
+            font-size: 1.2rem;
+          }
+          .text {
+            font-size: 1.2rem;
+            padding: 0 0px;
+          }
+          .texts {
+            font-size: 1.2rem;
+          }
+          .date {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "../../responsive.scss" ;
+.sponsors-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  
+  @include mobile {
+    display: block;
+    .inner {
+      .tab-pageSponsors {
+        display: flex;
+        font-size: 14px;
+        width: 100%;
+        margin: 33px 0 25px 0;
+        background: #003a79;
+        height: 50px;
+
+        &__items {
+          width: 160px;
+          height: 50px;
+          transition: all 0.3s;
+          &:hover button {
+            cursor: pointer;
+            background: #003a79;
+            color: #fff;
+          }
+        }
+
+        &__name {
+          font-size: 14px;
+          background: #003a79;
+          color: #fff;
+          justify-content: center;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          width: 100%;
+          cursor: pointer;
+          height: 100%;
+        }
+
+        .active button {
+          color: orange;
+        }
+      }
+
+      .sponsrors-body {
+        width: 100%;
+      }
+    }
+  }
+}

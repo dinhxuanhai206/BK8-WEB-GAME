@@ -1,0 +1,40 @@
+@import "../../responsive.scss";
+.wrapper {
+  display: none;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  @include mobile {
+    display: block;
+    .tab-block {
+      background: #0066d1;
+      .mySwiper {
+        width: 100%;
+        .item{
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+        .tab-page__items.active {
+          color: #fcb813;
+        }
+        .tab-page__items {
+          &:hover {
+            .tab-page__name {
+              color: #fcb813;
+            }
+          }
+        }
+        .tab-page__name {
+          font-size: 18px;
+          color: white;
+        }
+        .active {
+          background: transparent;
+          .tab-page__name {
+            color: #fcb813;
+          }
+        }
+      }
+    }
+  }
+}

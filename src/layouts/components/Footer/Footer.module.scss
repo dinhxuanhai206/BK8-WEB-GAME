@@ -1,0 +1,737 @@
+@import "../../../responsive.scss";
+.footer__top {
+  max-width: 100%;
+  background-color: rgba(178, 171, 171, 0.1);
+  @include mobile {
+    background-color: #fff;
+  }
+}
+
+.license__wrapper {
+  margin: auto;
+  border-bottom: 1px dotted black;
+  padding: 30px 30px;
+  display: flex;
+  gap: 50px;
+  @include mobile {
+    display: flex;
+    gap: 30px;
+    padding: 30px 3px;
+    margin-left: 5px;
+  }
+  .license__game {
+    flex: 42%;
+
+    .title {
+      display: flex;
+      font-family: var(--menuFont);
+      font-size: 14px;
+
+      .tick-icon {
+        margin-left: 15px;
+        width: 4%;
+      }
+    }
+
+    .gamming {
+      margin-top: 20px;
+
+      .gamming__logo {
+        width: 27%;
+      }
+
+      .text {
+        margin-top: 10px;
+        font-family: var(--menuFont);
+        line-height: 20px;
+        font-size: 13px;
+        margin-right: 80px;
+      }
+    }
+    @include tablet {
+      flex: 45%;
+      .title {
+        font-size: 12px;
+        .tick-icon {
+          width: 5%;
+        }
+      }
+      .gamming {
+        margin-top: 5px;
+        .gamming__logo {
+          width: 70%;
+        }
+        .text {
+          margin-top: 5px;
+          line-height: 16px;
+          font-size: 1.4rem;
+          width: 100%;
+          font-family: var(--menuFont);
+        }
+      }
+    }
+    @include mobile {
+      flex: 45%;
+      .title {
+        font-size: 12px;
+        .tick-icon {
+          width: 5%;
+        }
+      }
+      .gamming {
+        margin-top: 5px;
+        .gamming__logo {
+          width: 70%;
+        }
+        .text {
+          margin-top: 5px;
+          line-height: 16px;
+          font-size: 0.8rem;
+          width: 100%;
+          font-family: var(--menuFont);
+        }
+      }
+    }
+  }
+  .div-title {
+    display: flex;
+    flex: 58%;
+    gap: 50px;
+    .license {
+      flex: 71%;
+
+      .title {
+        margin-left: 5px;
+        font-family: var(--menuFont);
+        font-size: 14px;
+      }
+
+      .license__logo-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 150px;
+        margin-top: 20px;
+        gap: 20px;
+        width: 100%;
+        .img {
+          flex: 20%;
+        }
+        .license__logo-bmm {
+          width: 100%;
+        }
+
+        .license__logo-itech {
+          width: 70%;
+        }
+        .license__logo-gli {
+          width: 70%;
+        }
+        .license__logo-tst {
+          width: 90%;
+        }
+        .license__logo-godaddy {
+          width: 100%;
+        }
+      }
+    }
+    .guard {
+      flex: 29%;
+
+      .title {
+        margin-left: 10px;
+        font-family: var(--menuFont);
+        font-size: 14px;
+      }
+      .guard-icon {
+        margin-right: 10px;
+      }
+      .guard__logo-iovation {
+        margin-top: 10px;
+        width: 80%;
+      }
+      .guard__logo-threat {
+        margin-left: 10px;
+        width: 80%;
+      }
+    }
+    @include tablet {
+      .license {
+        .title {
+        }
+
+        .license__logo-wrapper {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          flex-wrap: wrap;
+          gap: 5px;
+          width: 100%;
+          .img {
+            flex: 30%;
+          }
+          .license__logo-bmm {
+            width: 80%;
+          }
+
+          .license__logo-itech {
+            width: 50%;
+          }
+          .license__logo-gli {
+            width: 50%;
+          }
+          .license__logo-tst {
+            width: 70%;
+          }
+          .license__logo-godaddy {
+            width: 100%;
+          }
+        }
+      }
+      .guard {
+        .title {
+          margin-left: 10px;
+          font-family: var(--menuFont);
+          font-size: 12px;
+        }
+        .guard-icon {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .guard__logo-iovation {
+          width: 100%;
+        }
+        .guard__logo-threat {
+          margin-bottom: -15px;
+          width: 100%;
+        }
+      }
+    }
+    @include mobile {
+      display: block;
+      flex: 55%;
+
+      .license {
+        .title {
+          margin-left: 5px;
+          margin-top: 3px;
+          font-family: var(--menuFont);
+          font-size: 10px;
+        }
+
+        .license__logo-wrapper {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          flex-wrap: wrap;
+          gap: 5px;
+          width: 100%;
+          .img {
+            flex: 30%;
+          }
+          .license__logo-bmm {
+            width: 70%;
+          }
+
+          .license__logo-itech {
+            width: 50%;
+          }
+          .license__logo-gli {
+            width: 50%;
+          }
+          .license__logo-tst {
+            width: 70%;
+          }
+          .license__logo-godaddy {
+            width: 100%;
+          }
+        }
+      }
+      .guard {
+        .title {
+          margin-left: 10px;
+          font-family: var(--menuFont);
+          font-size: 12px;
+        }
+        .guard-icon {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        .guard__logo-iovation {
+          width: 50%;
+        }
+        .guard__logo-threat {
+          margin-bottom: -15px;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.follow__wrapper {
+  margin: 20px auto;
+  padding: 0 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dotted black;
+  display: flex;
+  gap: 50px;
+  @include tablet {
+    border: none;
+  }
+
+  .follow {
+    flex: 42%;
+
+    .title {
+      font-family: var(--menuFont);
+      font-size: 14px;
+    }
+
+    .follow-icon {
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+      margin-top: 10px;
+
+      .follow__logo-facebook {
+        width: 10%;
+      }
+      .follow__logo-youtube {
+        width: 10%;
+        margin-left: -10px;
+      }
+    }
+    @include tablet {
+      flex: 46%;
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .follow-icon {
+        margin-left: -10px;
+
+        .follow__logo-facebook {
+          width: 20%;
+        }
+        .follow__logo-youtube {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  .pay-container {
+    flex: 58%;
+    display: flex;
+    gap: 50px;
+    .payment {
+      flex: 71%;
+      margin-left: 5px;
+
+      .title {
+        font-family: var(--menuFont);
+        font-size: 1.4rem;
+        @include tablet {
+          font-size: 1.2rem;
+        }
+      }
+
+      .payment-icon {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        align-items: center;
+        margin-left: -10px;
+
+        .payment__logo-ustd {
+          width: 12%;
+        }
+        .payment__logo-bitcoin,
+        .payment__logo-ethereum,
+        .payment__logo-bank {
+          width: 12%;
+          margin-left: -10px;
+        }
+        .payment__logo-eaziepay {
+          width: 12%;
+          margin-left: 5px;
+        }
+        .payment__logo-help2pay {
+          width: 7%;
+          margin-left: 15px;
+        }
+        .payment__logo-momo {
+          width: 7%;
+          margin-left: 10px;
+        }
+        .payment__logo-zalo {
+          width: 12%;
+          margin-left: 5px;
+        }
+        .payment__logo-viettlepay {
+          width: 13%;
+          margin-left: -5px;
+        }
+        .payment__logo-mobiphone {
+          width: 25%;
+          margin-left: 5px;
+        }
+        .payment__logo-viettle {
+          width: 15%;
+        }
+        .payment__logo-vinaphone {
+          width: 30%;
+        }
+        @include tablet {
+          .payment__logo-ustd {
+            width: 23%;
+            margin-left: -10px;
+          }
+          .payment__logo-bitcoin,
+          .payment__logo-ethereum,
+          .payment__logo-bank {
+            width: 22%;
+            margin-left: -10px;
+          }
+          .payment__logo-eaziepay {
+            width: 23%;
+            margin-left: 5px;
+          }
+          .payment__logo-help2pay {
+            width: 15%;
+            margin-left: 5px;
+          }
+          .payment__logo-momo {
+            width: 12%;
+            margin-left: 10px;
+          }
+          .payment__logo-zalo {
+            width: 19%;
+            margin-left: 5px;
+          }
+          .payment__logo-viettlepay {
+            width: 23%;
+            margin-left: 0px;
+          }
+          .payment__logo-mobiphone {
+            width: 28%;
+            margin-left: 0px;
+          }
+          .payment__logo-viettle {
+            width: 20%;
+          }
+          .payment__logo-vinaphone {
+            width: 33%;
+          }
+        }
+      }
+    }
+    .Play__responsibly {
+      flex: 29%;
+      .title {
+        font-family: var(--menuFont);
+        font-size: 1.4rem;
+        margin-left: 10px;
+      }
+
+      .Play-icon {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 25px;
+
+        .Play__logo-icon18 {
+          width: 40%;
+        }
+        .Play__logo-gamecare {
+          width: 40%;
+        }
+        .Play__logo-BGA {
+          width: 40%;
+        }
+      }
+      @include tablet {
+        .title {
+          font-size: 1.2rem;
+        }
+
+        .Play-icon {
+          margin-top: 5px;
+          .Play__logo-icon18 {
+            width: 50%;
+            margin-right: 0;
+          }
+          .Play__logo-gamecare {
+            width: 50%;
+          }
+          .Play__logo-BGA {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  @include mobile {
+    display: block;
+    padding: 10px 3px;
+    .follow {
+      .title {
+        font-size: 12px;
+        margin-left: 5px;
+      }
+      .follow-icon {
+        display: flex;
+        align-items: center;
+        margin-top: -1px;
+
+        .follow__logo-facebook {
+          width: 12%;
+          margin-left: 5px;
+        }
+        .follow__logo-youtube {
+          width: 12%;
+        }
+      }
+    }
+    .pay-container {
+      display: block;
+      .payment {
+        margin-top: 15px;
+
+        .title {
+          font-size: 12px;
+        }
+
+        .payment-icon {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          align-items: center;
+          margin-left: -10px;
+
+          .payment__logo-ustd {
+            margin-left: 0;
+            width: 12%;
+          }
+          .payment__logo-bitcoin,
+          .payment__logo-ethereum,
+          .payment__logo-bank {
+            width: 12%;
+            margin-left: -10px;
+          }
+          .payment__logo-eaziepay {
+            width: 12%;
+            margin-left: 5px;
+          }
+          .payment__logo-help2pay {
+            width: 7%;
+            margin-left: 15px;
+          }
+          .payment__logo-momo {
+            width: 7%;
+            margin-left: 10px;
+          }
+          .payment__logo-zalo {
+            width: 12%;
+            margin-left: 5px;
+          }
+          .payment__logo-viettlepay {
+            width: 13%;
+            margin-left: -5px;
+          }
+          .payment__logo-mobiphone {
+            width: 25%;
+            margin-left: 5px;
+          }
+          .payment__logo-viettle {
+            width: 15%;
+          }
+          .payment__logo-vinaphone {
+            width: 30%;
+          }
+        }
+      }
+      .Play__responsibly {
+        margin-top: 15px;
+        .title {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+
+        .Play-icon {
+          display: flex;
+          align-items: center;
+          margin-top: -1px;
+
+          .Play__logo-icon18 {
+            width: 10%;
+          }
+          .Play__logo-gamecare {
+            width: 10%;
+          }
+          .Play__logo-BGA {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer__nav {
+  margin: 20px auto;
+  display: flex;
+  padding: 0 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  gap: 20px;
+
+  .nav__container {
+    flex: 62%;
+    display: flex;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .menu__nav {
+      padding: 0 5px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .language {
+    flex: 12%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    .language-logo {
+      width: 22%;
+    }
+    .language-title {
+      margin-left: 5px;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+  }
+  .intro {
+    flex: 24%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    .intro-title {
+      margin-right: 8px;
+    }
+    .intro-icon {
+      width: 10%;
+    }
+  }
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+.footer-bottom {
+  margin: auto;
+  padding: 0 30px;
+
+  .welcom {
+    font-family: var(--menuFont);
+    // display: none;
+
+    &__title {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 13px;
+      margin-right: 200px;
+      @include tablet {
+        margin-right: 50px;
+      }
+    }
+    &__text-span {
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .noneTech__container {
+    .noneTech-title {
+      font-weight: 500;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 5px;
+    }
+    .noneTech {
+      // display: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: var(--menuFont);
+      gap: 10px;
+      margin-bottom: 20px;
+      .noneTech__item {
+        flex: 18%;
+        max-width: 260px;
+        .noneTech__item-title {
+          color: #a4a4a4;
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .noneTech__item-text {
+          line-height: 15px;
+          font-size: 12px;
+          color: #a4a4a4;
+        }
+      }
+    }
+  }
+
+  .footer__logo {
+    margin-top: 30px;
+    font-family: var(--menuFont);
+    margin-bottom: 70px;
+
+    .desk-logo {
+      margin-left: 15px;
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+    padding-left: 10px;
+    .welcom {
+      &__title {
+        font-size: 12px;
+      }
+      &__text {
+        font-size: 10px;
+        width: 100%;
+      }
+    }
+    .noneTech__container {
+      .noneTech {
+        gap: 10px;
+        margin-bottom: 20px;
+        .noneTech__item {
+          flex: 40%;
+          max-width: 180px;
+
+          .noneTech__item-title {
+            font-size: 10px;
+          }
+          .noneTech__item-text {
+            line-height: 15px;
+            font-size: 10px;
+            color: #a4a4a4;
+          }
+        }
+      }
+    }
+  }
+}

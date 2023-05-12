@@ -1,0 +1,11 @@
+@import "../../../responsive.scss";
+.wrapper {
+  display: none;
+  @include tablet{
+    display: block;
+    margin:10px auto;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(223, 222, 222);
+  }
+}

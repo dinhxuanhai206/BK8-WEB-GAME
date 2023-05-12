@@ -1,0 +1,72 @@
+@import "../../../responsive.scss";
+.wrapper{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    .title{
+        margin-left: 20px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+    .profile-block{
+        display: flex;
+        .titles{
+            color: #6a8cb0;
+        }
+        .text{
+            color: #858585;
+        }
+        .block1{
+            flex: 30%;
+            background-color: #eaeaea;
+            padding: 30px 40px;
+            font-size: 14px;
+          
+            .email{
+                margin-bottom: 20px;
+            }
+            .user{
+                margin-bottom: 20px;
+            }
+            @include tablet{
+                padding: 30px 20px;
+                font-size: 1.3rem;
+              
+            }
+        }
+        .block2{
+            flex: 30%;
+            background-color: #e2e2e2;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #ffffff;
+            padding: 30px 40px;
+            font-size: 14px;
+          
+            .contact{
+                margin-bottom: 20px;
+            }
+            .fullName{
+                margin-bottom: 20px;
+            }
+            .currency{
+                margin-bottom: 20px;
+            }
+            @include tablet{
+                padding: 30px 20px;
+                font-size: 1.3rem;
+              
+            }
+        }
+        .block3{
+            flex: 40%;
+            background-color: #eaeaea;
+            padding: 30px 40px;
+            font-size: 14px;
+            @include tablet{
+                padding: 30px 20px;
+                font-size: 1.3rem;
+              
+            }
+        }
+    }
+}

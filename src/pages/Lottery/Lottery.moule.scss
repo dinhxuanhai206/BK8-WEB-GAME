@@ -1,0 +1,14 @@
+@import "../../responsive.scss";
+.lottery-wrapper{
+    @include mobile{
+        
+    }
+    .lottery-body{
+        padding-top: 31px;
+        padding-bottom: 110px;
+    }
+    
+    .lottery-content{
+        margin-top: 20px;
+    }
+}

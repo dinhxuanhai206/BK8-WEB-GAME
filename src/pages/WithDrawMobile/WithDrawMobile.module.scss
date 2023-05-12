@@ -1,0 +1,123 @@
+@import "../../responsive.scss";
+.wrapper {
+  display: none;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  @include mobile {
+    display: block;
+    .header {
+      background: #003b79;
+      padding: 15px;
+      .coin {
+        text-align: center;
+        .main {
+          color: #0f6fd4;
+          font-size: 12px;
+        }
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+        .block {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          .vnd {
+            font-size: 14px;
+            color: #fcb813;
+            span {
+              color: white;
+              font-size: 26px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        background: #eaeaea;
+        align-items: center;
+        padding: 6px 0;
+        gap: 8px;
+        border-radius: 5px;
+        width: 120px;
+        margin: 0 auto;
+        justify-content: center;
+        .img {
+          width: 28px;
+          height: 28px;
+          .img-store {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .title {
+          font-size: 12px;
+        }
+      }
+    }
+    .inner {
+      .block {
+        display: flex;
+        gap: 5px;
+        margin: 10px 5px 0px 5px;
+        border-bottom: 1px solid rgb(211, 211, 248);
+      }
+      .item {
+        text-align: center;
+        font-size: 12px;
+        width: 80px;
+        padding: 8px 0;
+        border-radius: 5px 5px 0 0;
+        color: #6d6d6d;
+        border: 1px solid rgb(212, 211, 211);
+        background: rgb(58, 235, 161);
+        background: linear-gradient(
+          180deg,
+          rgba(58, 235, 161, 1) 0%,
+          rgba(45, 45, 45, 1) 0%,
+          rgba(198, 207, 207, 1) 0%,
+          rgba(149, 218, 223, 1) 0%,
+          rgba(240, 255, 240, 1) 0%,
+          rgba(242, 245, 245, 1) 100%,
+          rgba(184, 192, 193, 1) 100%,
+          rgba(162, 223, 227, 1) 100%,
+          rgba(237, 252, 252, 1) 100%
+        );
+      }
+      .active {
+        background: #fdb70e;
+      }
+    }
+    .titles {
+      font-size: 14px;
+      margin: 0 25px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      color: #6a8bc0;
+      font-family: sans-serif;
+      font-weight: 500;
+    }
+
+    .yet {
+      margin-top: 20px;
+      background: #eaecf0;
+      text-align: center;
+      padding: 20px 0;
+      color: #6d6d6d;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    .view {
+      color: #0065d1;
+      text-decoration: underline;
+      font-weight: 600;
+      margin-top: 15px;
+      display: block;
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+}

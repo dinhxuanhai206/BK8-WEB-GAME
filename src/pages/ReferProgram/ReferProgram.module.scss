@@ -1,0 +1,135 @@
+@import "../../responsive.scss";
+.wrapper {
+  margin-top: 50px;
+  display: none;
+  margin-bottom: 70px;
+  @include mobile {
+    display: block;
+    .menu {
+      display: flex;
+      background: #0066d2;
+      justify-content: space-between;
+      padding: 0 20px;
+      .btn-nav {
+        font-size: 1.1rem;
+        color: white;
+        padding: 15px 5px;
+        position: relative;
+        text-transform: uppercase;
+      }
+      .active {
+        color: #fdb813;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-transform: uppercase;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #fdb813;
+        }
+      }
+    }
+    .content {
+      .img {
+        width: 100%;
+      }
+      .title {
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #003c72;
+        font-family: sans-serif;
+        span {
+          color: #fdb813;
+        }
+      }
+      .title1 {
+        padding: 15px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        color: black;
+        font-family: sans-serif;
+      }
+      .p1 {
+        font-size: 12px;
+        margin-bottom: 15px;
+        font-family: sans-serif;
+        padding: 0 30px;
+      }
+      .p2 {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        padding: 0 30px;
+        margin-bottom: 15px;
+      }
+      .logo-block {
+        display: flex;
+        gap: 5px;
+        padding: 5px 20px;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .logo {
+            width: 50%;
+          }
+          .name {
+            font-size: 10px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+    .share {
+      background-image: url("../../assets/images/img-promosmobile/rp-banner-share.png");
+      width: 60%;
+      margin: 30px auto;
+      .block {
+        display: flex;
+        padding: 25px 30px;
+        padding-bottom: 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 18px;
+        .title-share {
+          font-weight: 600;
+          color: #000;
+          font-size: 18px;
+          font-family: sans-serif;
+        }
+        .text-share {
+          font-size: 9px;
+          font-family: sans-serif;
+          color: blue;
+        }
+      }
+      .btn-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        .btn-w {
+          padding: 12px 50px;
+          background: white;
+        }
+        .btn-share {
+          padding: 4px 15px;
+          border-radius: 3px;
+          background: #fdb813;
+          font-family: sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

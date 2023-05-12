@@ -1,0 +1,32 @@
+@import "../../../responsive.scss";
+.wrapper {
+  margin-bottom: 30px;
+  display: none;
+  @include mobile {
+    display: block;
+    .tab-block {
+      .mySwiper {
+        .tab-items {
+          border: none;
+          background-image: linear-gradient(to top, #0066d1, #003b79 70%);
+          .logo-img {
+            background-image: linear-gradient(to top, #0066d1, #003b79 70%);
+            border: none;
+            padding: 10px 8px;
+          }
+          .name {
+            font-size: 1.1rem;
+            color: white;
+
+          }
+          .active {
+            background: orange;
+            .name {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

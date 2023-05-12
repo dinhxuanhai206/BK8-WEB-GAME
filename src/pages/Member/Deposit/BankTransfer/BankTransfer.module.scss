@@ -1,0 +1,257 @@
+@import "../../../../responsive.scss";
+.wrapper {
+  .Banktranfer-bank {
+    display: flex;
+    margin-top: 30px;
+    @include tablet {
+      justify-content: space-between;
+    }
+    .bank-title {
+      width: 130px;
+      margin: 20px 40px;
+      @include tablet {
+        width: 22px;
+        margin-left: 10px;
+      }
+    }
+    .bank-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+
+      .bank-item {
+        cursor: pointer;
+        padding: 10px 0px;
+        width: 80px;
+        text-align: center;
+        background: #edeef0;
+        .name {
+          font-size: 1.2rem;
+        }
+      }
+      .active {
+        position: relative;
+        border: 0.5px solid rgb(2, 2, 247);
+        border-radius: 5px;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border-color: transparent blue blue transparent;
+          border-style: solid;
+          border-width: 8px 8px 8px 8px;
+          height: 0px;
+          width: 0px;
+        }
+      }
+      @include tablet {
+        gap: 10px;
+        justify-content: flex-end;
+        .bank-item {
+          width: 60px;
+          .name {
+            font-size: 0.9rem;
+          }
+        }
+        .active {
+          border: 0.5px solid blue;
+        }
+      }
+    }
+  }
+
+  .deposit-currency {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+
+    @include tablet {
+      justify-content: space-between;
+    }
+    .currency-select {
+      @include tablet {
+       width: 68%;
+      }
+    }
+    .currency-title {
+      width: 23.5%;
+      margin-left: 40px;
+      @include tablet {
+        width: 22.5%;
+        margin-left: 0;
+        margin-right: 40px;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .input {
+      width: 300px;
+      padding: 12px;
+      border-radius: 5px;
+      border: 0.5px solid #e6d4f5;
+      background: #fff;
+      cursor: pointer;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      @include tablet {
+        width: 100%;
+        padding: 8px;
+      }
+    }
+  }
+  .help-block {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    .help-title {
+      width: 33%;
+      margin-left: 40px;
+      @include tablet {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 40px;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .block-input {
+      width: 100%;
+    }
+    .input {
+      width: 300px;
+      padding: 12px;
+      border-radius: 5px;
+      border: 0.5px solid #e6d4f5;
+      cursor: pointer;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      @include tablet {
+        width: 100%;
+        padding: 8px;
+      }
+    }
+    .min {
+      font-size: 10px;
+      color: red;
+      margin-left: 12px;
+      margin-top: 20px;
+    }
+    .btn-block {
+      display: flex;
+      gap: 20px;
+      margin-top: 15px;
+      width: 100%;
+      .btn-number {
+        padding: 10px 0;
+        text-align: center;
+        width: 20%;
+        background-image: -webkit-linear-gradient(top, #f4f3f3, #e6e6e6);
+        color: #858585;
+        cursor: pointer;
+        border-radius: 5px;
+        justify-content: space-between;
+      }
+      .active {
+        border: 0.5px solid blue;
+      }
+      @include tablet {
+        gap: 10px;
+        .btn-number {
+          padding: 5px 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .deposit-channel {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    .channel-title {
+      width: 23.5%;
+      margin-left: 40px;
+      @include tablet {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 40px;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .channel-select {
+      width: 300px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      @include tablet {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+  }
+  .block-btn {
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+    justify-content: space-between;
+    .channel-title {
+      width: 24%;
+      margin-left: 40px;
+      @include tablet {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 40px;
+        padding-left: 25px;
+        left: 0px;
+        font-size: 1.2rem;
+      }
+    }
+    .btn-submit {
+      width: 40%;
+      padding: 13px 0;
+      text-align: center;
+      color: white;
+      background: #0062c9;
+      background: linear-gradient(to bottom, #e6d4f5 0%, #003679 180%);
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      @include tablet {
+        width: 50%;
+        font-size: 1.2rem;
+      }
+    }
+    .btn-upload {
+      width: 40%;
+      text-align: center;
+      color: white;
+      background: #0062c9;
+      background: linear-gradient(to bottom, #e6d4f5 0%, #003679 180%);
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      @include tablet {
+        width: 50%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

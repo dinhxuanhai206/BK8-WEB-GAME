@@ -1,0 +1,30 @@
+@import "../../responsive.scss";
+.wrapper {
+  display: none;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 40px;
+  @include mobile {
+    display: block;
+
+    .profile-block {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      border-top: 0.02rem solid #0066d1;
+      border-bottom: 0.04rem solid #e2e2e2;
+      background: #eaecf0;
+      padding:10px 20px;
+   
+      .item{
+        width: 50%;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        .titles {
+          color: #6a8cb0;
+        }
+      }
+    }
+  }
+}

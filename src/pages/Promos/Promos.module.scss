@@ -1,0 +1,155 @@
+@import "../../responsive.scss";
+.tab-page__items.active1 {
+  background: #003a79;
+}
+.tab-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 33px 0;
+  background: #f2f2f2;
+  @include tablet {
+    width: 100%;
+  }
+  &__items.active {
+    background: #003a79;
+  }
+  &__items {
+    width: 160px;
+    height: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background: #003a79;
+
+      .tab-page__name {
+        color: #fff;
+      }
+    }
+    @include tablet {
+      width: 11%;
+    }
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #858585;
+    @include tablet {
+      height: 100%;
+      font-size: 1.2rem;
+    }
+  }
+  .active {
+    background: #003a79;
+    .tab-pagename {
+      color: #fff;
+    }
+  }
+}
+
+.promos-item {
+  margin-bottom: 33px;
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  @include tablet {
+    gap: 20px;
+  }
+
+  .img-item {
+    flex: 20%;
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+    @include tablet {
+      flex: 30%;
+      .img {
+        width: 100%;
+        height: 150px;
+      }
+    }
+  }
+
+  .content-item {
+    flex: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed darkgray;
+
+    .left {
+      flex: 75%;
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        padding-top: 18px;
+        line-height: 24px;
+        @include tablet {
+          font-size: 1.6rem;
+          padding-top: 0px;
+        }
+      }
+
+      .description {
+        font-family: "AvenirLTStd";
+        font-weight: 500;
+        color: #666666;
+        font-size: 1.5rem;
+        padding-top: 8px;
+      }
+
+      .action {
+        margin-top: 10px;
+        display: flex;
+
+        button {
+          width: 122px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: 800;
+          cursor: pointer;
+        }
+
+        .btn-more {
+          background: #013b7a;
+          color: #fff;
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }
+
+        .btn-apply {
+          background: #fcb813;
+          color: #fff;
+          margin-left: 10px;
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .right {
+      flex: 25%;
+      text-align: right;
+      font-size: 14px;
+      .text {
+        color: #c4baba;
+      }
+      .time {
+        color: #cc001b;
+      }
+    }
+    @include tablet {
+    }
+  }
+}

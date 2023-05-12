@@ -1,0 +1,59 @@
+@import "../../../../responsive.scss";
+.wrapper {
+    @include mobile{
+      .block-left {
+        background: linear-gradient(#fff 30%, #f6d15f 80%);
+        padding: 10px;
+        padding-bottom: 0;
+        border-radius: 7px;
+        .block {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .tab-page-logo {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            gap: 5px;
+            justify-content:space-between;
+            border-bottom: 3px solid #fff;
+            .tab-items {
+              padding: 5px;
+              display: flex;
+              gap: 3px;
+              width: 22%;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.5s;
+              text-align: center;
+          
+            }
+            .logo-img {
+              border: none;
+              background: none;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+    
+            .active {
+              p {
+                color: blue;
+              }
+            }
+            p {
+              font-size: 1rem;
+              color: rgb(151, 147, 147);
+            }
+          }
+        }
+      }
+      .block-right{
+       
+      }
+    }
+    
+  }
+  
+  /////////////////////
+  

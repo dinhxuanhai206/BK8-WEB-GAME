@@ -1,0 +1,99 @@
+@import "../../responsive.scss";
+.wrapper {
+  margin-top: 60px;
+  display: none;
+  @include mobile {
+    display: block;
+    .logo {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .content {
+      margin: 10px 12px;
+      padding: 25px 28px;
+      background: rgb(245, 239, 239);
+      border-radius: 5px;
+
+      .username {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        margin-top: 15px;
+        .input {
+          width: 90%;
+          input {
+            border-top: 1px solid #c6c4c4;
+            width: 100%;
+            padding: 11px 15px;
+            background: #e1e1e1;
+            font-size: 14px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .pass {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        .input {
+          width: 90%;
+          input {
+            border-top: 1px solid #c6c4c4;
+            width: 100%;
+            padding: 11px 15px;
+            background: #e1e1e1;
+            font-size: 14px;
+            border-radius: 5px;
+          }
+        }
+      }
+      .check {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        .input {
+          width: 22%;
+          padding-left: 60px;
+        }
+        .text {
+          font-family: sans-serif;
+          padding-left: 3px;
+          font-size: 14px;
+          color: #6d6d6d;
+        }
+      }
+      .btn-login {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+        padding: 12px 0;
+        background: linear-gradient(#0062c9, #003b79);
+        text-align: center;
+      }
+      .link {
+        font-size: 14px;
+        color: #0062c9;
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+      }
+    }
+    .register {
+      text-align: center;
+      font-size: 14px;
+      color: #6d6d6d;
+      .link {
+        font-size: 14px;
+        color: #0062c9;
+      }
+    }
+  }
+}

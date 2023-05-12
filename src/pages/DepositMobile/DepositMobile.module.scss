@@ -1,0 +1,84 @@
+@import "../../responsive.scss";
+.deposit-wrapper {
+  display: none;
+  margin-top: 50px;
+  @include mobile {
+    display: block;
+    .coin{
+      background: #003b79;
+      padding: 15px 0;
+      text-align: center;
+      margin-bottom: 10px;
+      .main{
+        color: #0f6fd4;
+        font-size: 1.2rem;
+      }
+      .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+          
+      }
+     .block{
+      display: flex;
+      align-items: center;
+      gap:5px;
+      .vnd{
+          font-size: 1.4rem;
+          color: #fcb813;
+          span{
+            color:white;
+              font-size: 2.6rem;
+
+          }
+      }
+     }
+  }
+    .mySwiper {
+      width: 100%;
+      .items {
+        .btn {
+          text-align: center;
+          font-size: 1rem;
+          width: 100%;
+          padding: 10px 3px;
+          border-radius: 5px 5px 0 0;
+          color: #6d6d6d;
+        }
+      }
+      .active{
+        background: #fdb70e;
+      }
+    }
+    .titles {
+      font-size: 14px;
+      margin: 0 25px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      color: #6a8bc0;
+      font-family: sans-serif;
+      font-weight: 500;
+    
+    }
+  
+    .yet{
+      margin-top: 20px;
+      background: #eaecf0;
+      text-align: center;
+      padding: 20px 0;
+      color: #6d6d6d;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    .view{
+      color: #0065d1;
+      text-decoration: underline;
+      font-weight: 600;
+      margin-top: 15px;
+      display: block;
+      text-align: right;
+      margin-right: 10px;
+    }
+  }
+}
